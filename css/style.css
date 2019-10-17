@@ -1,0 +1,334 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  html:before, html:after, body:before, body:after, div:before, div:after, span:before, span:after, object:before, object:after, iframe:before, iframe:after,
+  h1:before,
+  h1:after, h2:before, h2:after, h3:before, h3:after, h4:before, h4:after, h5:before, h5:after, h6:before, h6:after, p:before, p:after, blockquote:before, blockquote:after, pre:before, pre:after,
+  abbr:before,
+  abbr:after, address:before, address:after, cite:before, cite:after, code:before, code:after,
+  del:before,
+  del:after, dfn:before, dfn:after, em:before, em:after, img:before, img:after, ins:before, ins:after, kbd:before, kbd:after, q:before, q:after, samp:before, samp:after,
+  small:before,
+  small:after, strong:before, strong:after, var:before, var:after,
+  b:before,
+  b:after, i:before, i:after,
+  dl:before,
+  dl:after, dt:before, dt:after, dd:before, dd:after, ol:before, ol:after, ul:before, ul:after, li:before, li:after,
+  fieldset:before,
+  fieldset:after, form:before, form:after, label:before, label:after, legend:before, legend:after,
+  article:before,
+  article:after, aside:before, aside:after, canvas:before, canvas:after, details:before, details:after, figcaption:before, figcaption:after, figure:before, figure:after,
+  footer:before,
+  footer:after, header:before, header:after, hgroup:before, hgroup:after, menu:before, menu:after, nav:before, nav:after, section:before, section:after, summary:before, summary:after,
+  time:before,
+  time:after, mark:before, mark:after, audio:before, audio:after, video:before, video:after, button:before, button:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+sub,
+sup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  sub:before, sub:after,
+  sup:before,
+  sup:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+a:before, a:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: none; }
+
+q:before, q:after {
+  content: none; }
+
+:focus {
+  outline: 0; }
+
+input[type="text"], textarea {
+  -webkit-appearance: none; }
+  input[type="text"]::-ms-clear, textarea::-ms-clear {
+    display: none; }
+
+input,
+textarea {
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #898b8c; }
+  input::-moz-placeholder,
+  textarea::-moz-placeholder {
+    color: #898b8c; }
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: #898b8c; }
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder {
+    color: transparent; }
+  input:focus::-moz-placeholder,
+  textarea:focus::-moz-placeholder {
+    color: transparent; }
+  input:focus:-ms-input-placeholder,
+  textarea:focus:-ms-input-placeholder {
+    color: transparent; }
+
+textarea {
+  resize: none; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word; }
+
+div {
+  display: block; }
+
+@font-face {
+  font-family: 'Days';
+  src: url("../fonts/Days.eot");
+  src: local("Days"), url("../fonts/Days.eot?#iefix") format("embedded-opentype"), url("../fonts/Days.woff") format("woff"), url("../fonts/Days.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon-logo {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 238px;
+  width: 1em;
+  height: .17em; }
+
+.icon-phone {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 17px;
+  width: 1em;
+  height: 1em; }
+
+.icon-user {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1.1em; }
+
+.icon-basket {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 15px;
+  width: 1em;
+  height: 1.15em; }
+
+.icon-search {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 17px;
+  width: 1em;
+  height: .8em; }
+
+.icon-email {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 17px;
+  width: 1em;
+  height: .7em; }
+
+.icon-facebook {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 8px;
+  width: 1em;
+  height: 2em; }
+
+.icon-twitter {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 17px;
+  width: 1em;
+  height: .8em; }
+
+.icon-googleplus {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 19px;
+  width: 1em;
+  height: .8em; }
+
+.icon-youtube {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 18px;
+  width: 1em;
+  height: 1em; }
+
+.icon-arrow-up,
+.icon-arrow-down,
+.icon-arrow-left,
+.icon-arrow-right,
+.icon-close {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 12px;
+  width: 1em;
+  height: 1em; }
+
+.icon-home {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1em; }
+
+.icon-tile,
+.icon-list {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1em; }
+
+.icon-truck {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 18px;
+  width: 1em;
+  height: 1em; }
+
+.icon-phone-outline {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 14px;
+  width: 1em;
+  height: 1em; }
+
+.icon-basket-del {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1.2em; }
+
+.icon-edit {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 15px;
+  width: 1em;
+  height: 1em; }
+
+.icon-door {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 15px;
+  width: 1em;
+  height: 1em; }
+
+.icon-skype {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1em; }
+
+.icon-icq {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1em; }
+
+.icon-point {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 16px;
+  width: 1em;
+  height: 1em; }
+
+.icon-filter {
+  display: inline-block;
+  fill: #b5b5b5;
+  font-size: 13px;
+  width: 1em;
+  height: 1em; }
+
+.icon-exel {
+  display: inline-block;
+  font-size: 30px;
+  width: 1em;
+  height: 1em; }
+
+body, html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body *, html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #ccc; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }

@@ -1,0 +1,16 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body *, html * {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
