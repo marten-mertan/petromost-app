@@ -5,7 +5,8 @@
     <title>petromost-app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
     <link href="js/scrollbar/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet"/>
@@ -14,26 +15,135 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div class="header-layout">
     <div class="header">
-        <div class="header-menu">
-
+        <div class="header-col">
+            <div class="header-menu">
+                <svg class="icon-hamburger">
+                    <use xlink:href="./img/icons/main.svg#icon-hamburger"/>
+                </svg>
+            </div>
+            <div class="header-logo">
+                <a href="home.html">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </div>
         </div>
-        <div class="header-logo">
-
+        <div class="header-col">
+            <div class="header-phone">
+                <svg class="icon-phone">
+                    <use xlink:href="./img/icons/main.svg#icon-phone"/>
+                </svg>
+            </div>
+            <div class="header-profile">
+                <svg class="icon-user">
+                    <use xlink:href="./img/icons/main.svg#icon-user"/>
+                </svg>
+            </div>
+            <div class="header-basket">
+                <svg class="icon-basket">
+                    <use xlink:href="./img/icons/main.svg#icon-basket"/>
+                </svg>
+                <div class="header-basket-count"><span>1</span></div>
+            </div>
         </div>
-        <div class="header-phone">
+    </div>
+</div>
 
-        </div>
-        <div class="header-profile">
 
-        </div>
-        <div class="header-basket">
+<div class="wrapper">
 
+
+    <div class="search-area">
+        <form action="" method="GET">
+            <input type="text" class="search-area-input" placeholder="Поиск на Петромост">
+            <button class="search-area-btn">
+                <svg class="icon-search">
+                    <use xlink:href="./img/icons/main.svg#icon-search"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="slider-layout">
+        <div class="slider">
+            <!--START slider-item-->
+            <div class="slider-item" style="background-image:url('./img/slide-img-1.jpg');">
+                <a href="#">
+                    <div class="slider-item__title">Только неделю</div>
+                </a>
+            </div>
+            <!--END slider-item-->
+            <!--START slider-item-->
+            <div class="slider-item" style="background-image:url('./img/category-img-2.jpg');">
+                <a href="#">
+                    <div class="slider-item__title">Цена по карте</div>
+                </a>
+            </div>
+            <!--END slider-item-->
         </div>
     </div>
 
+    <div class="popular-category">
+        <!--START popular-category-item-->
+        <div class="popular-category-item">
+            <a href="#" class="popular-category-card">
+                <div class="popular-category-card__icon">
+                    <svg class="icon-catalog">
+                        <use xlink:href="./img/icons/main.svg#icon-catalog"/>
+                    </svg>
+                </div>
+                <div class="popular-category-card__text">Каталог</div>
+            </a>
+        </div>
+        <!--END popular-category-item-->
+        <!--START popular-category-item-->
+        <div class="popular-category-item">
+            <a href="#" class="popular-category-card">
+                <div class="popular-category-card__icon">
+                    <svg class="icon-heart">
+                        <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                    </svg>
+                </div>
+                <div class="popular-category-card__text">Любимые</div>
+            </a>
+        </div>
+        <!--END popular-category-item-->
+        <!--START popular-category-item-->
+        <div class="popular-category-item">
+            <a href="#" class="popular-category-card">
+                <div class="popular-category-card__icon">
+                    <svg class="icon-time">
+                        <use xlink:href="./img/icons/main.svg#icon-time"/>
+                    </svg>
+                </div>
+                <div class="popular-category-card__text">История</div>
+            </a>
+        </div>
+        <!--END popular-category-item-->
+        <!--START popular-category-item-->
+        <div class="popular-category-item">
+            <a href="#" class="popular-category-card">
+                <div class="popular-category-card__icon">
+                    <svg class="icon-user">
+                        <use xlink:href="./img/icons/main.svg#icon-user"/>
+                    </svg>
+                </div>
+                <div class="popular-category-card__text">Профиль</div>
+            </a>
+        </div>
+        <!--END popular-category-item-->
+    </div>
+
     <div class="category">
+        <div class="category-title">
+            <a href="#" class="category-title__link">
+                <span>Все категории</span>
+                <svg class="icon-triangle">
+                    <use xlink:href="./img/icons/main.svg#icon-triangle"/>
+                </svg>
+            </a>
+        </div>
         <div class="category-list">
             <!--START category-list__item-->
             <div class="category-list__item">
@@ -51,8 +161,250 @@
             <div class="category-list__item">
                 <div class="category-card">
                     <a href="#">
-                        <div class="category-card-img"></div>
-                        <div class="category-card-text"></div>
+                        <div class="category-card-img">
+                            <img src="./img/category-img-2.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Цена по карте</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-3.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Бытовая химия и товары для дома</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-4.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Гигиена и косметика</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-5.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Наши марки</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-6.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Хлеб и хлебобулочные изделия</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-7.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Готовые блюда, замороженные готовые блюда</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-8.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Диабетические продукты</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-9.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Для детей</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-10.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Для животных</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-11.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Кондитерские изделия</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-12.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Консервация</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-13.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Крупы, макароны, бакалея</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-14.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Масло растительное, соусы, специи, приправы</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-15.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Молочные продукты, сыры, яйцо</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-16.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Мясо, птица</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-17.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Напитки безалкогольные</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-18.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Непродовольственные товары</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-19.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Рыба, икра, морепродукты</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-20.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Фрукты, овощи</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-21.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Снеки</div>
+                    </a>
+                </div>
+            </div>
+            <!--END category-list__item-->
+            <!--START category-list__item-->
+            <div class="category-list__item">
+                <div class="category-card">
+                    <a href="#">
+                        <div class="category-card-img">
+                            <img src="./img/category-img-22.jpg" alt="">
+                        </div>
+                        <div class="category-card-text">Чай, кофе, какао</div>
                     </a>
                 </div>
             </div>
