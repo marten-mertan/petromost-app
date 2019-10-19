@@ -56,6 +56,30 @@ $(function () {
         });
     });
 
+    $(document).on('click', '.header-menu', function (e) {
+        e.preventDefault();
+        $('.popup-menu').addClass('is-visible');
+        $('.popup-bg').addClass('is-visible');
+        $('html').addClass('blocked');
+    });
+
+    $(document).on('click', '.popup-close, .popup-bg', function (e) {
+        e.preventDefault();
+        $('.popup-menu').removeClass('is-visible');
+        $('.popup-bg').removeClass('is-visible');
+        $('html').removeClass('blocked');
+    });
+
+    $(document).on('click', '.c-tabs-menu a', function (event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $('.c-tabs').find(".tab-content").not(tab).css("display", "none");
+        // $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+
 
 
     // $('.header-layout').each(function(){

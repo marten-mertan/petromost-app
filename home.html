@@ -51,9 +51,9 @@
 </div>
 
 
+
+
 <div class="wrapper">
-
-
     <div class="search-area">
         <form action="" method="GET">
             <input type="text" class="search-area-input" placeholder="Поиск на Петромост">
@@ -413,6 +413,99 @@
     </div>
 </div>
 
+<!--popup-->
+<div class="popup-menu">
+    <div class="popup-menu-head">
+        <div class="header-logo">
+            <a href="home.html">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+        <a href="#" class="popup-close">
+            <svg class="icon-close">
+                <use xlink:href="./img/icons/main.svg#icon-close"/>
+            </svg>
+        </a>
+    </div>
+    <div class="popup-menu-body">
+        <div class="popup-menu-address">
+            <svg class="icon-point">
+                <use xlink:href="./img/icons/main.svg#icon-point"/>
+            </svg>
+            <span>Адрес доставки: Введите адрес</span>
+        </div>
+        <div class="popup-menu-time">
+            <div class="c-tabs">
+                <ul class="c-tabs-menu">
+                    <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
+                    <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
+                </ul>
+                <div class="c-tabs-body">
+                    <div id="menu-time-1" class="tab-content">
+                        <div class="popup-menu-time__grid">
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text through"><a href="#">09:30 - 12:30</a></div>
+                            </div>
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text through"><a href="#">12:30 - 15:30</a></div>
+                            </div>
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                            </div>
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu-time-2" class="tab-content">
+                        <div class="popup-menu-time__grid">
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text"><a href="#">09:30 - 12:30</a></div>
+                            </div>
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text"><a href="#">12:30 - 15:30</a></div>
+                            </div>
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                            </div>
+                            <div class="popup-menu-time__col">
+                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-menu-list">
+            <!--START popup-menu-list__item-->
+            <div class="popup-menu-list__item">
+                <a href="#" class="popup-menu-link">Каталог</a>
+            </div>
+            <!--END popup-menu-list__item-->
+            <!--START popup-menu-list__item-->
+            <div class="popup-menu-list__item">
+                <a href="#" class="popup-menu-link">Доставка и оплата</a>
+            </div>
+            <!--END popup-menu-list__item-->
+            <!--START popup-menu-list__item-->
+            <div class="popup-menu-list__item">
+                <a href="#" class="popup-menu-link">idUser#456879</a>
+            </div>
+            <!--END popup-menu-list__item-->
+            <!--START popup-menu-list__item-->
+            <div class="popup-menu-list__item">
+                <a href="#" class="popup-menu-link">Каталог товаров</a>
+            </div>
+            <!--END popup-menu-list__item-->
+        </div>
+        <div class="popup-menu-footer">
+            <a href="tel:+7(8182)44-44-44" class="popup-menu-phone">т. 44-44-44</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup-bg"></div>
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick-1.8.1/slick/slick.min.js"></script>

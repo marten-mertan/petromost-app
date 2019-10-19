@@ -13,6 +13,10 @@ html {
     height: 100%;
     font: 400 10px/1.33 'Roboto', sans-serif;
     overflow-y: scroll;
+    
+    &.blocked {
+        overflow: hidden;
+    }
 }
 
 body {
@@ -83,5 +87,97 @@ body {
 
     .inc {
         overflow: hidden;
+    }
+}
+
+
+.c-tabs {
+    &-menu {
+        display: flex;
+        flex-flow: row nowrap;
+
+        &__item {
+            display: inline-block;
+            width: 50%;
+
+            & > a {
+                display: block;
+                color: #000;
+                text-transform: uppercase;
+                font-weight: 400;
+                padding: .9rem .9rem;
+                text-align: center;
+                white-space: nowrap;
+                text-decoration: none;
+                background: #EFF6FB;
+
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+
+
+        &__item.current {
+            position: relative;
+            background: #5AB55E;
+
+            .tab-content {
+                display: block;
+            }
+
+            a {
+                background: #5AB55E;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &-body {
+        background: #5AB55E;
+        padding: 2rem 1.5rem;
+        color: #ffffff;
+    }
+
+    .tab-content {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    .tab-content:first-child {
+        display: block;
+    }
+}
+
+
+
+@keyframes scaleUp {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
     }
 }
