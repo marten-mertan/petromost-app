@@ -1,5 +1,8 @@
 var windowWidth = (window.innerWidth ); // вся ширина окна
 var documentWidth = (document.documentElement.clientWidth ); // ширина минус прокрутка
+document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) { event.preventDefault(); }
+}, false);
 
 
 $(window).on("load", function () {

@@ -939,7 +939,8 @@ body {
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  background-color: #fff; }
+  background-color: #fff;
+  cursor: pointer; }
   .catalog-basket.is-show {
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
