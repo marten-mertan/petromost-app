@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>petromost-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="js/sumoselect/sumoselect.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header-layout">
+    <div class="header">
+        <a href="https://abestuzhev.github.io/petromost-app/profile.html" class="header-back">
+            <svg class="icon-arrow-left">
+                <use xlink:href="./img/icons/main.svg#icon-arrow-left"/>
+            </svg>
+        </a>
+        <div class="header-title">Оформление заказа</div>
+    </div>
+</div>
+
+
+
+
+<div class="wrapper">
+    <div class="order">
+        <form action="" method="POST">
+
+
+        <div class="order-card">
+            <div class="order-card__title">Карта<br> снегири</div>
+            <div class="order-card-number">
+                <div class="order-card-number__text">1234156431351321321312</div>
+                <a href="#" class="order-card-number__icon">
+                    <svg class="icon-pencil">
+                        <use xlink:href="./img/icons/main.svg#icon-pencil"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="order-body">
+            <div class="order-address">
+                <div class="order-title">
+                    <a href="#" class="order-title__link">
+                        <span>Адреса доставки</span>
+                        <svg class="icon-triangle">
+                            <use xlink:href="./img/icons/main.svg#icon-triangle"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="c-form">
+                    <div class="c-form-line">
+                        <label class="c-form-label">Город</label>
+                        <select class="c-form-select" name="delivery-add-city" id="">
+                            <option value="">Архангельск</option>
+                            <option value="">Москва</option>
+                            <option value="">Санкт-Петербург</option>
+                        </select>
+                    </div>
+                    <div class="c-form-line">
+                        <label class="c-form-label">Улица</label>
+                        <input type="text" class="c-form-input" name="delivery-add-street">
+                    </div>
+                    <div class="c-form-grid">
+                        <div class="c-form-col c-form-col--6">
+                            <div class="c-form-line">
+                                <label class="c-form-label">Дом</label>
+                                <input type="text" class="c-form-input" name="delivery-add-house">
+                            </div>
+                            <div class="c-form-line">
+                                <label class="c-form-label">Этаж</label>
+                                <input type="text" class="c-form-input" name="delivery-add-floor">
+                            </div>
+                        </div>
+                        <div class="c-form-col c-form-col--6">
+                            <div class="c-form-line">
+                                <label class="c-form-label">Подъезд</label>
+                                <input type="text" class="c-form-input" name="delivery-add-porch">
+                            </div>
+                            <div class="c-form-line">
+                                <label class="c-form-label">Кв./Офис</label>
+                                <input type="text" class="c-form-input" name="delivery-add-flat">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-time">
+                <div class="c-tabs">
+                    <ul class="c-tabs-menu">
+                        <li class="c-tabs-menu__item current"><a href="#order-time-1">Сегодня</a></li>
+                        <li class="c-tabs-menu__item"><a href="#order-time-2">Завтра</a></li>
+                    </ul>
+                    <div class="c-tabs-body">
+                        <div id="order-time-1" class="tab-content">
+                            <div class="popup-menu-time__grid">
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text through"><a href="#">09:30 - 12:30</a></div>
+                                </div>
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text through"><a href="#">12:30 - 15:30</a></div>
+                                </div>
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                </div>
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="order-time-2" class="tab-content">
+                            <div class="popup-menu-time__grid">
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text"><a href="#">09:30 - 12:30</a></div>
+                                </div>
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text"><a href="#">12:30 - 15:30</a></div>
+                                </div>
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                </div>
+                                <div class="popup-menu-time__col">
+                                    <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-delivery">
+                <div class="order-title">Способ доставки</div>
+                <div class="order-change">
+                    <div class="order-change__item">
+                        <input type="radio" name="order-change-delivery" id="order-change-delivery-1" class="order-change-input">
+                        <label class="order-change-label" for="order-change-delivery-1">
+                            <svg class="icon-big-car">
+                                <use xlink:href="./img/icons/main.svg#icon-big-car"></use>
+                            </svg>
+                            <span>доставка</span>
+                        </label>
+                    </div>
+                    <div class="order-change__item">
+                        <input type="radio" name="order-change-delivery" id="order-change-delivery-2" class="order-change-input" checked>
+                        <label class="order-change-label" for="order-change-delivery-2">
+                            <svg class="icon-small-car">
+                                <use xlink:href="./img/icons/main.svg#icon-small-car"></use>
+                            </svg>
+                            <span>самовынос</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-pay">
+                <div class="order-title">Способ оплаты</div>
+                <div class="order-pay-text">Оплата происходит при получении товара.</div>
+                <div class="order-change">
+                    <div class="order-change__item">
+                        <input type="radio" name="order-change-pay" id="order-change-1" class="order-change-input" checked>
+                        <label class="order-change-label" for="order-change-1">
+                            <svg class="icon-card">
+                                <use xlink:href="./img/icons/main.svg#icon-card"></use>
+                            </svg>
+                            <span>картой</span>
+                        </label>
+                    </div>
+                    <div class="order-change__item">
+                        <input type="radio" name="order-change-pay" id="order-change-2" class="order-change-input">
+                        <label class="order-change-label" for="order-change-2">
+                            <svg class="icon-small-car">
+                                <use xlink:href="./img/icons/main.svg#icon-small-car"></use>
+                            </svg>
+                            <span>наличными</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="c-checkbox">
+                    <input type="radio" name="order-delivery-agreement" id="order-delivery-agreement" class="c-checkbox-input" checked="checked">
+                    <label for="order-delivery-agreement" class="c-checkbox-label">
+                        <span>
+                            Я ознакомлен с условиями <br><a href="#">платной доставки</a>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="order-data">
+                <div class="order-title">
+                    <a href="#" class="order-title__link" id="order-data-link">
+                        <span>Ваши данные</span>
+                        <svg class="icon-pencil">
+                            <use xlink:href="./img/icons/main.svg#icon-pencil"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="order-data__body">
+                    <div class="order-data__text">Морозов Эдуард</div>
+                    <div class="order-data__text">+7 952 456- 12- 23</div>
+                </div>
+            </div>
+
+            <div class="order-agreement">
+                <div class="c-checkbox">
+                    <input type="radio" name="order-agreement" id="order-agreement" class="c-checkbox-input" checked="checked">
+                    <label for="order-agreement" class="c-checkbox-label">
+                        <span>
+                            Я ознакомлен(а) с Положением
+                            о защите
+                            персональных данных покупателей
+                            интернет – магазина «Петромост».
+                            Настоящим я даю разрешение ИП
+                            ЖЕМЧУГОВУ НИКОЛАЮ ВЛАДИМИРОВИЧУ
+                            и его уполномоченным представителям
+                            получать, собирать, хранить, и
+                            использовать мои персональные данные:
+                            фамилию, имя, отчество, домашний и
+                            мобильный телефоны, адрес электронной
+                            почты, в целях заключения и исполнения
+                            договора купли-продажи и
+                            информирования потребителя. Согласие
+                            может в любой момент быть мною
+                            отозвано путем направления
+                            письменного уведомления.
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+
+
+
+            <div class="c-btn-layout">
+                <a href="https://abestuzhev.github.io/petromost-app/home.html" class="c-btn">Продолжить покупки</a>
+                <a href="https://abestuzhev.github.io/petromost-app/order-confirm.html" class="c-btn action">Оформить заказ</a>
+            </div>
+
+        </div>
+
+        </form>
+    </div>
+
+</div>
+
+
+<div class="mfp-wrap popup-card">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="popup-icon">
+                            <svg class="icon-card">
+                                <use xlink:href="./img/icons/main.svg#icon-card"></use>
+                            </svg>
+                        </div>
+
+                        <form action="" method="POST" class="popup-form">
+                            <div class="popup-line">
+                                <input type="text" class="popup-input" value="123415643135132132">
+                            </div>
+                            <div class="c-btn-layout">
+                                <button class="c-btn">изменить карту</button>
+                            </div>
+                        </form>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mfp-wrap popup-user">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="popup-icon">
+                            <svg class="icon-user-outline">
+                                <use xlink:href="./img/icons/main.svg#icon-user-outline"></use>
+                            </svg>
+                        </div>
+
+                        <form action="" method="POST" class="popup-form">
+                            <div class="popup-line">
+                                <input type="text" class="popup-input" value="Морозов Эдуард">
+                            </div>
+                            <div class="popup-line">
+                                <input type="text" class="popup-input" value="+7 952 456-12-23">
+                            </div>
+                            <div class="c-btn-layout">
+                                <button class="c-btn">сохранить изменения</button>
+                            </div>
+                        </form>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--popup-->
+<div class="mfp-wrap popup-menu">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+
+                <div class="popup-box">
+                    <div class="popup-menu-head">
+                        <div class="header-logo">
+                            <a href="https://abestuzhev.github.io/petromost-app/https://abestuzhev.github.io/petromost-app/home.html">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="popup-close">
+                            <svg class="icon-close">
+                                <use xlink:href="./img/icons/main.svg#icon-close"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popup-menu-body">
+                        <div class="popup-menu-address">
+                            <svg class="icon-point">
+                                <use xlink:href="./img/icons/main.svg#icon-point"/>
+                            </svg>
+                            <span>Адрес доставки: Введите адрес</span>
+                        </div>
+                        <div class="popup-menu-time">
+                            <div class="c-tabs">
+                                <ul class="c-tabs-menu">
+                                    <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
+                                    <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
+                                </ul>
+                                <div class="c-tabs-body">
+                                    <div id="menu-time-1" class="tab-content">
+                                        <div class="popup-menu-time__grid">
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text through"><a href="#">09:30 - 12:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text through"><a href="#">12:30 - 15:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu-time-2" class="tab-content">
+                                        <div class="popup-menu-time__grid">
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">09:30 - 12:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">12:30 - 15:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup-menu-list">
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Доставка и оплата</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">idUser#456879</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог товаров</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                        </div>
+                        <div class="popup-menu-footer">
+                            <a href="tel:+7(8182)44-44-44" class="popup-menu-phone">т. 44-44-44</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
+<!--<script src="js/sumoselect/jquery.sumoselect.min.js"></script>-->
+<script src="js/jquery.mask.min.js"></script>
+<!--<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>

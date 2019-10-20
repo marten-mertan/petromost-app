@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>petromost-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="js/sumoselect/sumoselect.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header-layout">
+    <div class="header header-transparent">
+        <div class="header-col">
+            <a href="https://abestuzhev.github.io/petromost-app/category.html" class="header-back">
+                <svg class="icon-arrow-left">
+                    <use xlink:href="./img/icons/main.svg#icon-arrow-left"/>
+                </svg>
+            </a>
+
+        </div>
+        <div class="header-col">
+            <a href="https://abestuzhev.github.io/petromost-app/order-history.html" class="header-share">
+                <svg class="icon-share">
+                    <use xlink:href="./img/icons/main.svg#icon-share"/>
+                </svg>
+            </a>
+            <a href="https://abestuzhev.github.io/petromost-app/order-history.html" class="header-favorite">
+                <svg class="icon-heart">
+                    <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper">
+
+    <div class="product">
+
+        <div class="slider-layout">
+            <div class="slider">
+                <!--START slider-item-->
+                <div class="slider-item" style="background-image:url('./img/category-img-2.jpg');">
+
+                </div>
+                <!--END slider-item-->
+                <!--START slider-item-->
+                <div class="slider-item" style="background-image:url('./img/product-img-1.jpg');">
+
+                </div>
+                <!--END slider-item-->
+            </div>
+        </div>
+        <div class="product-body">
+            <div class="product-info">
+                <span>Артикул: 1235456</span>
+                <span>Производитель: Гринпродукт</span>
+            </div>
+            <div class="product-rating"><img src="./img/raiting.png" alt=""></div>
+            <div class="product-title">Горох ярославский бакалейщик» колотый, прозрачная уп. 0,8г.</div>
+            <div class="product-desc">
+                ТУ 9214-241-23476484-06. Бедро цыпленка уемляночка. Пищевая ценность в 100г продукта: белок - 17%, жиры - 15,7%, Калорийность: 209,3 ккал. Хранить при температуре от 0 до +2. Срок хранения 5 суток. Изготовитель: ООО "ПТФ Уемская". Россия.
+            </div>
+            <div class="product-operation">
+                <div class="product-operation__item">
+                    <div class="c-counter">
+                        <button type="button" class="but c-counter__btn dec">
+                            <svg class="icon-minus">
+                                <use xlink:href="./img/icons/main.svg#icon-minus"></use>
+                            </svg>
+                        </button>
+                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                        <button type="button" class="but c-counter__btn inc">
+                            <svg class="icon-plus">
+                                <use xlink:href="./img/icons/main.svg#icon-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-operation__item">
+                    <div class="product-price__sale">750 руб.</div>
+                    <div class="product-price__num">589 руб.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <div class="catalog-title">
+                <span>С этим товаром покупают</span>
+            </div>
+            <div class="catalog-list">
+                <!--START category-list__item-->
+                <div class="catalog-list__item">
+                    <div class="catalog-card">
+                        <div class="catalog-card__body">
+                            <a href="product.html" class="catalog-card-favorite">
+                                <svg class="icon-heart">
+                                    <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                                </svg>
+                            </a>
+                            <div class="catalog-card__img">
+                                <a href="product.html">
+                                    <img src="./img/catalog-product-img-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <a href="#" class="catalog-card__title">
+                                <span>Горох «Ярославский бакалейщик»  уп. 0,8</span>
+                            </a>
+                        </div>
+
+                        <div class="catalog-card__footer">
+                            <div class="catalog-card-add">
+                                <div class="catalog-card-price">
+                                    <div class="catalog-card-price__sale">24,98 руб.</div>
+                                    <div class="catalog-card-price__num">127,98 руб.</div>
+                                </div>
+                                <a href="#" class="catalog-card-add__btn">
+                                    <svg class="icon-plus">
+                                        <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-card-choice">
+                                <div class="catalog-card-choice__price">589 руб.</div>
+                                <div class="catalog-card-choice__sale">Выгода: 257 руб.</div>
+                                <div class="catalog-card-count">
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec">
+                                            <svg class="icon-minus">
+                                                <use xlink:href="./img/icons/main.svg#icon-minus"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc">
+                                            <svg class="icon-plus">
+                                                <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END category-list__item-->
+                <!--START category-list__item-->
+                <div class="catalog-list__item">
+                    <div class="catalog-card">
+                        <a href="#" class="catalog-card-favorite">
+                            <svg class="icon-heart">
+                                <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                            </svg>
+                        </a>
+                        <div class="catalog-card__img">
+                            <a href="product.html">
+                                <img src="./img/catalog-product-img-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="catalog-card__body">
+                            <a href="product.html" class="catalog-card__title">
+                                <span>Горох «Ярославский бакалейщик» колотый, прозрачная уп. 0,8</span>
+                            </a>
+                        </div>
+                        <div class="catalog-card__footer">
+                            <div class="catalog-card-add">
+                                <div class="catalog-card-price">
+                                    <div class="catalog-card-price__sale">24,98 руб.</div>
+                                    <div class="catalog-card-price__num">127,98 руб.</div>
+                                </div>
+                                <a href="#" class="catalog-card-add__btn">
+                                    <svg class="icon-plus">
+                                        <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-card-choice">
+                                <div class="catalog-card-choice__price">589 руб.</div>
+                                <div class="catalog-card-choice__sale">Выгода: 257 руб.</div>
+                                <div class="catalog-card-count">
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec">
+                                            <svg class="icon-minus">
+                                                <use xlink:href="./img/icons/main.svg#icon-minus"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc">
+                                            <svg class="icon-plus">
+                                                <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END category-list__item-->
+                <!--START category-list__item-->
+                <div class="catalog-list__item">
+                    <div class="catalog-card">
+                        <a href="#" class="catalog-card-favorite">
+                            <svg class="icon-heart">
+                                <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                            </svg>
+                        </a>
+                        <div class="catalog-card__img">
+                            <a href="product.html">
+                                <img src="./img/catalog-product-img-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="catalog-card__body">
+                            <a href="product.html" class="catalog-card__title">
+                                <span>Горох «Ярославский бакалейщик» колотый, прозрачная уп. 0,8</span>
+                            </a>
+                        </div>
+                        <div class="catalog-card__footer">
+                            <div class="catalog-card-add">
+                                <div class="catalog-card-price">
+                                    <div class="catalog-card-price__sale">24,98 руб.</div>
+                                    <div class="catalog-card-price__num">127,98 руб.</div>
+                                </div>
+                                <a href="#" class="catalog-card-add__btn">
+                                    <svg class="icon-plus">
+                                        <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-card-choice">
+                                <div class="catalog-card-choice__price">589 руб.</div>
+                                <div class="catalog-card-choice__sale">Выгода: 257 руб.</div>
+                                <div class="catalog-card-count">
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec">
+                                            <svg class="icon-minus">
+                                                <use xlink:href="./img/icons/main.svg#icon-minus"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc">
+                                            <svg class="icon-plus">
+                                                <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END category-list__item-->
+                <!--START category-list__item-->
+                <div class="catalog-list__item">
+                    <div class="catalog-card">
+                        <a href="#" class="catalog-card-favorite">
+                            <svg class="icon-heart">
+                                <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                            </svg>
+                        </a>
+                        <div class="catalog-card__img">
+                            <a href="product.html">
+                                <img src="./img/catalog-product-img-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="catalog-card__body">
+                            <a href="product.html" class="catalog-card__title">
+                                <span>Горох «Ярославский бакалейщик» колотый, прозрачная уп. 0,8</span>
+                            </a>
+                        </div>
+                        <div class="catalog-card__footer">
+                            <div class="catalog-card-add">
+                                <div class="catalog-card-price">
+                                    <div class="catalog-card-price__sale">24,98 руб.</div>
+                                    <div class="catalog-card-price__num">127,98 руб.</div>
+                                </div>
+                                <a href="#" class="catalog-card-add__btn">
+                                    <svg class="icon-plus">
+                                        <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-card-choice">
+                                <div class="catalog-card-choice__price">589 руб.</div>
+                                <div class="catalog-card-choice__sale">Выгода: 257 руб.</div>
+                                <div class="catalog-card-count">
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec">
+                                            <svg class="icon-minus">
+                                                <use xlink:href="./img/icons/main.svg#icon-minus"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc">
+                                            <svg class="icon-plus">
+                                                <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END category-list__item-->
+                <!--START category-list__item-->
+                <div class="catalog-list__item">
+                    <div class="catalog-card">
+                        <a href="#" class="catalog-card-favorite">
+                            <svg class="icon-heart">
+                                <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                            </svg>
+                        </a>
+                        <div class="catalog-card__img">
+                            <a href="product.html">
+                                <img src="./img/catalog-product-img-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="catalog-card__body">
+                            <a href="product.html" class="catalog-card__title">
+                                <span>Горох «Ярославский бакалейщик» колотый, прозрачная уп. 0,8</span>
+                            </a>
+                        </div>
+                        <div class="catalog-card__footer">
+                            <div class="catalog-card-add">
+                                <div class="catalog-card-price">
+                                    <div class="catalog-card-price__sale">24,98 руб.</div>
+                                    <div class="catalog-card-price__num">127,98 руб.</div>
+                                </div>
+                                <a href="#" class="catalog-card-add__btn">
+                                    <svg class="icon-plus">
+                                        <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-card-choice">
+                                <div class="catalog-card-choice__price">589 руб.</div>
+                                <div class="catalog-card-choice__sale">Выгода: 257 руб.</div>
+                                <div class="catalog-card-count">
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec">
+                                            <svg class="icon-minus">
+                                                <use xlink:href="./img/icons/main.svg#icon-minus"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc">
+                                            <svg class="icon-plus">
+                                                <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END category-list__item-->
+                <!--START category-list__item-->
+                <div class="catalog-list__item">
+                    <div class="catalog-card">
+                        <a href="#" class="catalog-card-favorite">
+                            <svg class="icon-heart">
+                                <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                            </svg>
+                        </a>
+                        <div class="catalog-card__img">
+                            <a href="product.html">
+                                <img src="./img/catalog-product-img-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="catalog-card__body">
+                            <a href="product.html" class="catalog-card__title">
+                                <span>Горох «Ярославский бакалейщик» колотый, прозрачная уп. 0,8</span>
+                            </a>
+                        </div>
+                        <div class="catalog-card__footer">
+                            <div class="catalog-card-add">
+                                <div class="catalog-card-price">
+                                    <div class="catalog-card-price__sale">24,98 руб.</div>
+                                    <div class="catalog-card-price__num">127,98 руб.</div>
+                                </div>
+                                <a href="#" class="catalog-card-add__btn">
+                                    <svg class="icon-plus">
+                                        <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-card-choice">
+                                <div class="catalog-card-choice__price">589 руб.</div>
+                                <div class="catalog-card-choice__sale">Выгода: 257 руб.</div>
+                                <div class="catalog-card-count">
+                                    <div class="c-counter">
+                                        <button type="button" class="but c-counter__btn dec">
+                                            <svg class="icon-minus">
+                                                <use xlink:href="./img/icons/main.svg#icon-minus"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                        <button type="button" class="but c-counter__btn inc">
+                                            <svg class="icon-plus">
+                                                <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END category-list__item-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="catalog-basket">
+        <div class="catalog-basket-head">
+            <div class="catalog-basket-head__col">
+                <div class="catalog-basket-head__icon">
+                    <svg class="icon-catalog">
+                        <use xlink:href="./img/icons/main.svg#icon-catalog"/>
+                    </svg>
+                    <svg class="icon-heart">
+                        <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                    </svg>
+                    <svg class="icon-time">
+                        <use xlink:href="./img/icons/main.svg#icon-time"/>
+                    </svg>
+                    <svg class="icon-user-outline">
+                        <use xlink:href="./img/icons/main.svg#icon-user-outline"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog-basket-head__col">
+                <div class="catalog-basket-head__info">
+                    <span>3 шт. ; 1 589 руб.</span>
+                    <svg class="icon-arrow-bottom">
+                        <use xlink:href="./img/icons/main.svg#icon-arrow-bottom"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="catalog-basket__body">
+            <div class="catalog-basket-title">
+                <svg class="icon-basket">
+                    <use xlink:href="./img/icons/main.svg#icon-basket"/>
+                </svg>
+                <span>Корзина</span>
+                <svg class="icon-arrow-up">
+                    <use xlink:href="./img/icons/main.svg#icon-arrow-up"/>
+                </svg>
+            </div>
+
+            <div class="catalog-basket-info">
+                <div class="catalog-basket-info__price">Стоимость: <span>3 шт. ; 589 руб.</span></div>
+                <div class="catalog-basket-info__total">Итого стоимость: <span>3 шт. ; 589 руб.</span></div>
+                <div class="catalog-basket-info__benefit">Ваша выгода: <span>257 руб.</span></div>
+                <a href="https://abestuzhev.github.io/petromost-app/basket.html" class="catalog-basket-btn">Перейти в корзину</a>
+            </div>
+
+
+        </div>
+        <div class="catalog-basket__footer">
+            <div class="popular-category">
+                <!--START popular-category-item-->
+                <div class="popular-category-item">
+                    <a href="#" class="popular-category-card">
+                        <div class="popular-category-card__icon">
+                            <svg class="icon-catalog">
+                                <use xlink:href="./img/icons/main.svg#icon-catalog"/>
+                            </svg>
+                        </div>
+                        <div class="popular-category-card__text">Каталог</div>
+                    </a>
+                </div>
+                <!--END popular-category-item-->
+                <!--START popular-category-item-->
+                <div class="popular-category-item">
+                    <a href="#" class="popular-category-card">
+                        <div class="popular-category-card__icon">
+                            <svg class="icon-heart">
+                                <use xlink:href="./img/icons/main.svg#icon-heart"/>
+                            </svg>
+                        </div>
+                        <div class="popular-category-card__text">Любимые</div>
+                    </a>
+                </div>
+                <!--END popular-category-item-->
+                <!--START popular-category-item-->
+                <div class="popular-category-item">
+                    <a href="#" class="popular-category-card">
+                        <div class="popular-category-card__icon">
+                            <svg class="icon-time">
+                                <use xlink:href="./img/icons/main.svg#icon-time"/>
+                            </svg>
+                        </div>
+                        <div class="popular-category-card__text">История</div>
+                    </a>
+                </div>
+                <!--END popular-category-item-->
+                <!--START popular-category-item-->
+                <div class="popular-category-item">
+                    <a href="#" class="popular-category-card">
+                        <div class="popular-category-card__icon">
+                            <svg class="icon-user">
+                                <use xlink:href="./img/icons/main.svg#icon-user"/>
+                            </svg>
+                        </div>
+                        <div class="popular-category-card__text">Профиль</div>
+                    </a>
+                </div>
+                <!--END popular-category-item-->
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--popup-->
+<div class="mfp-wrap popup-menu">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+
+                <div class="popup-box">
+                    <div class="popup-menu-head">
+                        <div class="header-logo">
+                            <a href="https://abestuzhev.github.io/petromost-app/https://abestuzhev.github.io/petromost-app/home.html">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="popup-close">
+                            <svg class="icon-close">
+                                <use xlink:href="./img/icons/main.svg#icon-close"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popup-menu-body">
+                        <div class="popup-menu-address">
+                            <svg class="icon-point">
+                                <use xlink:href="./img/icons/main.svg#icon-point"/>
+                            </svg>
+                            <span>Адрес доставки: Введите адрес</span>
+                        </div>
+                        <div class="popup-menu-time">
+                            <div class="c-tabs">
+                                <ul class="c-tabs-menu">
+                                    <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
+                                    <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
+                                </ul>
+                                <div class="c-tabs-body">
+                                    <div id="menu-time-1" class="tab-content">
+                                        <div class="popup-menu-time__grid">
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text through"><a href="#">09:30 - 12:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text through"><a href="#">12:30 - 15:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu-time-2" class="tab-content">
+                                        <div class="popup-menu-time__grid">
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">09:30 - 12:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">12:30 - 15:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup-menu-list">
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Доставка и оплата</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">idUser#456879</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог товаров</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                        </div>
+                        <div class="popup-menu-footer">
+                            <a href="tel:+7(8182)44-44-44" class="popup-menu-phone">т. 44-44-44</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
+<!--<script src="js/sumoselect/jquery.sumoselect.min.js"></script>-->
+<script src="js/jquery.mask.min.js"></script>
+<!--<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>

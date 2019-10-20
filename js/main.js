@@ -20,6 +20,15 @@ $(function () {
     });
 
 
+    $('.product .catalog-list').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
+
+
     $(document).on('click', '.catalog-card-add__btn', function (e) {
         e.preventDefault();
         $(this).parents('.catalog-card').addClass('active');
@@ -34,30 +43,47 @@ $(function () {
     //корзина в каталоге
     var catalogBasketHeight = $('.catalog-basket').height();
     var catalogBasketHeadHeight = $('.catalog-basket-head').height();
-    var pos = catalogBasketHeight - catalogBasketHeadHeight;
+    var pos = +(catalogBasketHeight - catalogBasketHeadHeight);
+    var posHead = -(catalogBasketHeight - catalogBasketHeadHeight);
     console.log('catalogBasketHeight: ' + catalogBasketHeight);
     console.log('catalogBasketHeadHeight: ' + catalogBasketHeadHeight);
+    console.log('posHead: ' + posHead);
     console.log(pos);
+    var catalogBasket = $('.catalog-basket');
 
-    $('.catalog-basket').css({
-        'bottom': -pos
-    });
-
-    $(document).on('click', '.catalog-basket-head', function (e) {
+    $(document).on('click', '.product-buy__price, .catalog-basket-head__info', function (e) {
         e.preventDefault();
-        $('.catalog-basket').addClass('is-show');
-        $('.catalog-basket').css({
+        catalogBasket.addClass('is-show');
+        catalogBasket.css({
             'bottom': 0
         });
     });
 
-    $(document).on('click', '.catalog-basket-title', function (e) {
+    $(document).on('click', '.c-product-card-operation__add, .catalog-card-add__btn', function (e) {
         e.preventDefault();
-        $('.catalog-basket').removeClass('is-show');
-        $('.catalog-basket').css({
-            'bottom': -pos
+        catalogBasket.css({
+            'bottom': posHead
         });
     });
+    $(document).on('click', '.catalog-basket-title', function (e) {
+        e.preventDefault();
+        catalogBasket.removeClass('is-show');
+        catalogBasket.css({
+            'bottom': posHead
+        });
+    });
+
+    $('.basket').each(function(){
+        catalogBasket.css({
+            'bottom': posHead
+        });
+    });
+    // if($('div').hasClass('basket')){
+    //     catalogBasket.css({
+    //         'bottom': posHead
+    //     });
+    // }
+
 
     $(document).on('click', '.header-menu', function (e) {
         e.preventDefault();
@@ -84,16 +110,45 @@ $(function () {
     });
 
 
+    $(document).on('click', '.order-history-info__head', function (event) {
+        event.preventDefault();
+        $('.order-history-info__body').slideToggle(200);
+    });
 
-    // $('.header-layout').each(function(){
-    //
-    //     if($('div').hasClass('header-layout')){
-    //         $('.wrapper').addClass('has-header');
-    //     }else {
-    //         $('.wrapper').removeClass('has-header');
-    //     }
-    //
-    // });
+    $(document).on('click', '.c-product-card-operation__add, .catalog-card-add__btn', function (event) {
+        event.preventDefault();
+        $(this).parents('.c-product-card-operation').toggleClass('is-show');
+    });
+
+
+    $(document).on('click', '.c-counter__btn.dec', function (event) {
+        event.preventDefault();
+        var countValue = $(this).parents('.c-counter').find('.c-counter__field').val();
+        if(countValue == 1){
+            $('.catalog-basket').removeClass('is-show');
+            $('.catalog-card').removeClass('active');
+            $('.c-product-card-operation').removeClass('is-show');
+            // $('.c-product-card-operation').removeClass('is-show');
+            catalogBasket.css({
+                'bottom': -500
+            });
+        }
+        // console.log('hide-catalog-basket');
+
+    });
+
+
+
+    $('.header-layout').each(function(){
+
+        if($('div').hasClass('header-layout')){
+            $('.wrapper').addClass('has-header');
+        }else {
+            $('.wrapper').removeClass('has-header');
+        }
+        console.log('header-layout');
+
+    });
 
     $('.catalog-basket').each(function(){
 
@@ -325,8 +380,9 @@ $(function () {
         }
     });
 
-    showPopup("#profile", '.popup-auth');
-    showPopup("#registration", '.popup-reg');
+    showPopup(".order-card-number__icon", '.popup-card');
+    showPopup("#order-data-link", '.popup-user');
+    showPopup(".header-menu", '.popup-mmenu');
 
 
 

@@ -35,7 +35,7 @@
 
     li {
       position: relative;
-      padding-left: 25px;
+      /*padding-left: 25px;*/
     }
 
     .corrected::before {
@@ -63,7 +63,7 @@
         margin: 20px auto;
         max-width: 400px;
         background: #424a67;
-        padding: 40px 60px;
+        padding: 20px 20px;
         /*padding-left: 0;*/
         border-radius: 6px;
     }
@@ -74,6 +74,28 @@
     }
 
     a:hover { text-decoration: underline;}
+
+    @media (min-width:320px) {
+        a {
+            font-size: 14px;
+        }
+
+        section {
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+
+    @media (min-width:600px) {
+        a {
+            font-size: 16px;
+        }
+
+        section {
+            margin: 60px auto;
+            border-radius: 10px;
+        }
+    }
 </style>
 </head>
 
@@ -84,8 +106,22 @@
     <h1>petromost-app</h1>
 
     <ol>
-        <li><a href="home.html">Главная</a> </li>
-        <li><a href="catalog.html">Каталог</a> </li>
+        <li><a href="home.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="product.html">Карточка товара</a></li>
+        <li><a href="profile.html">Личный кабинет</a></li>
+        <li><a href="basket.html">Корзина</a></li>
+        <li><a href="profile-data.html">Данные пользователя</a></li>
+        <li><a href="order.html">Оформление заказа</a></li>
+        <li><a href="order-confirm.html">Подтвердить заказ</a></li>
+        <li><a href="order-history.html">История заказов</a></li>
+        <li><a href="order-history-during.html">История заказов. Заказ в процессе</a></li>
+        <li><a href="order-history-completed.html">История заказов. Заказ выполнен</a></li>
+        <li><a href="order-history-canceled.html">История заказов. Заказ отменен</a></li>
+        <li><a href="my-card.html">Моя карта Снегири</a></li>
+        <li><a href="product-favorite.html">Любимые товары</a></li>
+        <li><a href="delivery-address.html">Адрес доставки</a></li>
+        <li><a href="delivery-address-add.html">Добавить новый адрес</a></li>
     </ol>
 </section>
 
