@@ -364,6 +364,9 @@ html {
 body {
   font-size: 1.5rem; }
 
+a {
+  cursor: pointer; }
+
 .wrapper {
   width: 100%;
   max-width: 1366px;
