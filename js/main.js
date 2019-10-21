@@ -203,16 +203,7 @@ $(function () {
 
 
 
-    $(document).on('click', '', function (e) {
-        e.preventDefault();
-
-
-    });
-    $(document).on('click', '', function (e) {
-        e.preventDefault();
-
-
-    });
+    
 
 
 

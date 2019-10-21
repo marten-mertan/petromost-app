@@ -688,7 +688,7 @@
 
         // If target is a link, prevent default action.
         if($target.is('a')) {
-            event.preventDefault();
+            // event.preventDefault();
         }
 
         // If target is not the <li> element (ie: a child), find the <li>.
