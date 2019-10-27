@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>petromost-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="js/sumoselect/sumoselect.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="header-layout">
+    <div class="header">
+        <div class="header-col">
+            <a href="#" class="header-menu">
+                <svg class="icon-hamburger">
+                    <use xlink:href="./img/icons/main.svg#icon-hamburger"/>
+                </svg>
+            </a>
+            <a href="https://abestuzhev.github.io/petromost-app/home.html" class="header-logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header-col">
+            <a href="#" class="header-phone">
+                <svg class="icon-phone">
+                    <use xlink:href="./img/icons/main.svg#icon-phone"/>
+                </svg>
+            </a>
+            <a href="https://abestuzhev.github.io/petromost-app/profile.html" class="header-profile">
+                <svg class="icon-user">
+                    <use xlink:href="./img/icons/main.svg#icon-user"/>
+                </svg>
+            </a>
+            <a href="https://abestuzhev.github.io/petromost-app/basket.html" class="header-basket">
+                <svg class="icon-basket">
+                    <use xlink:href="./img/icons/main.svg#icon-basket"/>
+                </svg>
+                <div class="header-basket-count"><span>1</span></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="wrapper">
+    <div class="search-area">
+        <form action="" method="GET">
+            <input type="text" class="search-area-input" placeholder="Поиск на Петромост">
+            <button class="search-area-btn">
+                <svg class="icon-search">
+                    <use xlink:href="./img/icons/main.svg#icon-search"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="entrance registration">
+        <div class="c-btn-layout c-btn-layout--justify">
+            <a href="#" class="c-btn canceled">Вход</a>
+            <a href="#" class="c-btn" completed>Регистрация</a>
+        </div>
+        <form action="" method="POST" class="entrance-form">
+            <!--START profile-data-form__item-->
+            <div class="entrance-form__item">
+                <div class="c-entry-field">
+                    <label class="c-label">
+                        <span>Телефон, e-mail или логин</span>
+                        <input type="text" name="auth-login" class="c-input" required>
+                    </label>
+                </div>
+            </div>
+            <!--END profile-data-form__item-->
+            <!--START profile-data-form__item-->
+            <div class="entrance-form__item">
+                <div class="c-entry-field">
+                    <label class="c-label">
+                        <span>Пароль</span>
+                        <input type="password" name="auth-password" class="c-input" required>
+                    </label>
+                </div>
+            </div>
+            <!--END profile-data-form__item-->
+            <!--START profile-data-form__item-->
+            <div class="entrance-form__item">
+                <div class="c-checkbox">
+                    <input type="checkbox" name="entrance-agreement" id="entrance-agreement" class="c-checkbox-input" checked>
+                    <label for="entrance-agreement" class="c-checkbox-label">
+                        <span>
+                            Я ознакомлен(а) с Положением
+                            о защите
+                            персональных данных покупателей
+                            интернет – магазина «Петромост».
+                            Настоящим я даю разрешение ИП
+                            ЖЕМЧУГОВУ НИКОЛАЮ ВЛАДИМИРОВИЧУ
+                            и его уполномоченным представителям
+                            получать, собирать, хранить, и
+                            использовать мои персональные данные:
+                            фамилию, имя, отчество, домашний и
+                            мобильный телефоны, адрес электронной
+                            почты, в целях заключения и исполнения
+                            договора купли-продажи и
+                            информирования потребителя. Согласие
+                            может в любой момент быть мною
+                            отозвано путем направления
+                            письменного уведомления.
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <!--END profile-data-form__item-->
+            <div class="c-btn-layout c-btn-layout--center">
+                <button class="c-btn"> Зарегистрироваться </button>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+<div class="mfp-wrap popup-menu">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+
+                <div class="popup-box">
+                    <div class="popup-menu-head">
+                        <div class="header-logo">
+                            <a href="https://abestuzhev.github.io/petromost-app/https://abestuzhev.github.io/petromost-app/home.html">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="popup-close">
+                            <svg class="icon-close">
+                                <use xlink:href="./img/icons/main.svg#icon-close"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popup-menu-body">
+                        <div class="popup-menu-address">
+                            <svg class="icon-point">
+                                <use xlink:href="./img/icons/main.svg#icon-point"/>
+                            </svg>
+                            <span>Адрес доставки: Введите адрес</span>
+                        </div>
+                        <div class="popup-menu-time">
+                            <div class="c-tabs">
+                                <ul class="c-tabs-menu">
+                                    <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
+                                    <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
+                                </ul>
+                                <form action="" method="post">
+                                    <div class="c-tabs-body">
+                                        <div id="menu-time-1" class="tab-content">
+                                            <div class="popup-menu-time__grid">
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text through">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-today-1" value="09:30 - 12:30">
+                                                        <label for="menu-time-today-1">09:30 - 12:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text through">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-today-2" value="12:30 - 15:30">
+                                                        <label for="menu-time-today-2">12:30 - 15:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-today-3" value="15:30 - 18:30" checked>
+                                                        <label for="menu-time-today-3">15:30 - 18:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-today-4" value="18:30 - 21:00">
+                                                        <label for="menu-time-today-4">18:30 - 21:00</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="menu-time-2" class="tab-content">
+                                            <div class="popup-menu-time__grid">
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-1" value="09:30 - 12:30">
+                                                        <label for="menu-time-tomorrow-1">09:30 - 12:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-2" value="12:30 - 15:30">
+                                                        <label for="menu-time-tomorrow-2">12:30 - 15:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-3" value="15:30 - 18:30">
+                                                        <label for="menu-time-tomorrow-3">15:30 - 18:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-4" value="18:30 - 21:00">
+                                                        <label for="menu-time-tomorrow-4">18:30 - 21:00</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="popup-menu-list">
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Доставка и оплата</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">idUser#456879</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог товаров</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                        </div>
+                        <div class="popup-menu-footer">
+                            <a href="tel:+7(8182)44-44-44" class="popup-menu-phone">т. 44-44-44</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
+<!--<script src="js/sumoselect/jquery.sumoselect.min.js"></script>-->
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/slick-1.8.1/slick/slick.min.js"></script>
+<!--<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>

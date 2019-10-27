@@ -538,6 +538,11 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+  .c-btn-layout--justify {
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .c-btn {
   background: #5AB55E;
@@ -570,6 +575,39 @@ a {
 .action {
   background: #DE2D42;
   color: #fff; }
+
+.c-input {
+  border: none;
+  outline: none;
+  padding: 1.4rem 1rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: .6rem; }
+
+.c-entry-field {
+  position: relative; }
+  .c-entry-field .c-input {
+    border: none;
+    outline: none;
+    padding: 1.4rem 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: .6rem;
+    border: .1rem solid #DBE3E9;
+    width: 100%; }
+  .c-entry-field .c-label span {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: .4rem;
+    top: -.8rem;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 0 .6rem; }
 
 .c-product {
   margin-bottom: 2.4rem; }
@@ -1245,6 +1283,17 @@ a {
       display: none; }
     .catalog-card.active .catalog-card-choice {
       display: block; }
+  .catalog-card-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    width: 8.9rem;
+    height: 8.9rem; }
+    .catalog-card-label--only-week {
+      background: url(../img/label-only-week.png) 0 0 no-repeat; }
+    .catalog-card-label--price-card {
+      background: url(../img/label-price-card.png) 0 0 no-repeat; }
   .catalog-card-favorite {
     position: absolute;
     right: 1.4rem;
@@ -1561,10 +1610,23 @@ a {
 
 .popup-menu-time__text.through {
   text-decoration: line-through; }
+  .popup-menu-time__text.through label {
+    text-decoration: line-through; }
 
 .popup-menu-time__text a {
   text-decoration: none;
   color: #ffffff; }
+
+.popup-menu-time__text label {
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 2px; }
+
+.popup-menu-time__text input[type="radio"] {
+  display: none; }
+  .popup-menu-time__text input[type="radio"]:checked + label {
+    border-color: #fff; }
 
 .popup-menu-link {
   display: block;
@@ -2381,6 +2443,19 @@ a {
   .popup-body {
     position: relative;
     z-index: 10; }
+
+.entrance {
+  padding: 0 2rem; }
+  .entrance .c-btn-layout {
+    margin-bottom: 2rem; }
+  .entrance .c-btn {
+    padding: 1.3rem 3rem; }
+  .entrance-form__item {
+    margin-bottom: 2rem; }
+  .entrance-form__link {
+    color: #000000;
+    font-size: 13px;
+    line-height: 1; }
 
 @keyframes scaleUp {
   0% {

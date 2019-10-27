@@ -445,40 +445,67 @@
                                     <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
                                     <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
                                 </ul>
-                                <div class="c-tabs-body">
-                                    <div id="menu-time-1" class="tab-content">
-                                        <div class="popup-menu-time__grid">
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text through"><a href="#">09:30 - 12:30</a></div>
+                                <form action="" method="post">
+                                    <div class="c-tabs-body">
+                                        <div id="menu-time-1" class="tab-content">
+                                            <div class="popup-menu-time__grid">
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text through">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-today-1" value="09:30 - 12:30">
+                                                        <label for="menu-time-today-1">09:30 - 12:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text through">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-today-2" value="12:30 - 15:30">
+                                                        <label for="menu-time-today-2">12:30 - 15:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-today-3" value="15:30 - 18:30" checked>
+                                                        <label for="menu-time-today-3">15:30 - 18:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-today-4" value="18:30 - 21:00">
+                                                        <label for="menu-time-today-4">18:30 - 21:00</label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text through"><a href="#">12:30 - 15:30</a></div>
-                                            </div>
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
-                                            </div>
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                        </div>
+                                        <div id="menu-time-2" class="tab-content">
+                                            <div class="popup-menu-time__grid">
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-1" value="09:30 - 12:30">
+                                                        <label for="menu-time-tomorrow-1">09:30 - 12:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-2" value="12:30 - 15:30">
+                                                        <label for="menu-time-tomorrow-2">12:30 - 15:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-3" value="15:30 - 18:30">
+                                                        <label for="menu-time-tomorrow-3">15:30 - 18:30</label>
+                                                    </div>
+                                                </div>
+                                                <div class="popup-menu-time__col">
+                                                    <div class="popup-menu-time__text">
+                                                        <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-4" value="18:30 - 21:00">
+                                                        <label for="menu-time-tomorrow-4">18:30 - 21:00</label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="menu-time-2" class="tab-content">
-                                        <div class="popup-menu-time__grid">
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text"><a href="#">09:30 - 12:30</a></div>
-                                            </div>
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text"><a href="#">12:30 - 15:30</a></div>
-                                            </div>
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
-                                            </div>
-                                            <div class="popup-menu-time__col">
-                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
+
                             </div>
                         </div>
 

@@ -453,6 +453,23 @@
 
         }
 
+        &-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 8;
+            width: 8.9rem;
+            height: 8.9rem;
+
+            &--only-week {
+                background: url(../img/label-only-week.png) 0 0 no-repeat;
+            }
+
+            &--price-card {
+                background: url(../img/label-price-card.png) 0 0 no-repeat;
+            }
+        }
+
         &-favorite {
             position: absolute;
             right: 1.4rem;
@@ -886,13 +903,35 @@
 
             &.through {
                 text-decoration: line-through;
+
+                label {
+                    text-decoration: line-through;
+                }
             }
 
             a {
                 text-decoration: none;
                 color: #ffffff;
             }
+
+            label {
+                padding: 2px 4px;
+                border: 1px solid transparent;
+                display: inline-block;
+                border-radius: 2px;
+            }
+
+            input[type="radio"] {
+                display: none;
+
+                &:checked + label {
+                    border-color: #fff;
+                }
+            }
+
         }
+
+
     }
 
     &-list {
@@ -1984,9 +2023,33 @@
         z-index: 10;
         //overflow: hidden;
     }
-
-
 }
+
+
+.entrance {
+    padding: 0 2rem;
+
+    .c-btn-layout {
+        margin-bottom: 2rem;
+    }
+
+    .c-btn {
+        padding: 1.3rem 3rem;
+    }
+
+    &-form {
+        &__item {
+            margin-bottom: 2rem;
+        }
+
+        &__link {
+            color: #000000;
+            font-size: 13px;
+            line-height: 1;
+        }
+    }
+}
+
 
 @keyframes scaleUp {
     0% {
