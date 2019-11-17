@@ -1336,12 +1336,14 @@ a {
     display: block;
     text-decoration: none;
     letter-spacing: 0.05rem;
-    margin-bottom: 1.2rem; }
+    margin-bottom: .6rem; }
     .catalog-card__title span {
       display: block;
       color: #000000;
       font-weight: 300;
       line-height: 1.4rem; }
+  .catalog-card__footer .catalog-card-sale {
+    margin-top: .5rem; }
   .catalog-card-add {
     padding-right: 4rem;
     position: relative;
@@ -1389,6 +1391,37 @@ a {
       font-size: 1.3rem;
       color: #000000;
       margin-bottom: .6rem; }
+  .catalog-card-sale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: .4rem;
+    overflow: hidden;
+    background: #FEDE39;
+    margin-bottom: .9rem; }
+    .catalog-card-sale__text {
+      color: #DE2D42;
+      padding: .4rem 1.3rem;
+      line-height: 1rem;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .catalog-card-sale__num {
+      background: #DE2D42;
+      font-size: 1.1rem;
+      color: #ffffff;
+      padding: .4rem 1.3rem;
+      line-height: 1.1rem; }
 
 .catalog-basket {
   position: fixed;

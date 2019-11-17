@@ -524,7 +524,7 @@
             display: block;
             text-decoration: none;
             letter-spacing: 0.05rem;
-            margin-bottom: 1.2rem;
+            margin-bottom: .6rem;
 
             span {
                 display: block;
@@ -537,6 +537,9 @@
 
         &__footer {
 
+            .catalog-card-sale {
+                margin-top: .5rem;
+            }
         }
 
         &-add {
@@ -607,6 +610,36 @@
 
         &-count {
 
+        }
+
+
+        &-sale {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: .4rem;
+            overflow: hidden;
+            background: #FEDE39;
+            margin-bottom: .9rem;
+
+
+            &__text {
+                color: #DE2D42;
+                padding: .4rem 1.3rem;
+                line-height: 1rem;
+                font-size: 1rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            &__num {
+                background: #DE2D42;
+                font-size: 1.1rem;
+                color: #ffffff;
+                padding: .4rem 1.3rem;
+                line-height: 1.1rem;
+            }
         }
     }
 
