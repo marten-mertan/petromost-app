@@ -10,6 +10,22 @@ $(window).on("load", function () {
 });
 
 $(function () {
+
+    //добавление выбора города
+
+    $(document).on('click', '.popup-menu-city a', function (e) {
+        e.preventDefault();
+        $('.popup-menu-body').addClass('is-hide');
+        $('.popup-menu-city__body').addClass('is-show');
+    });
+
+    $(document).on('click', '.popup-menu-city__link, .popup-close', function () {
+        $('.popup-menu-body').removeClass('is-hide');
+        $('.popup-menu-city__body').removeClass('is-show');
+    });
+
+
+
     $('.slider').slick({
         dots: true,
         arrows: false,
