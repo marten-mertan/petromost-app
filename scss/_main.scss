@@ -1,15 +1,10 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
 
-    z-index: 10;
 
     &-transparent {
         padding: 1rem;
@@ -38,6 +33,12 @@
         width: 100%;
         max-width: 1366px;
         margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        background-color: #fff;
     }
 
     &-menu {
@@ -626,9 +627,9 @@
 
             &__text {
                 color: #DE2D42;
-                padding: .4rem 1.3rem;
+                padding: .4rem .6rem;
                 line-height: 1rem;
-                font-size: 1rem;
+                font-size: .9rem;
                 font-weight: 400;
                 text-transform: uppercase;
             }
