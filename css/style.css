@@ -373,7 +373,7 @@ a {
   margin: 0 auto;
   min-height: 100%; }
   .wrapper.has-header {
-    padding-top: 4.6rem !important; }
+    padding-top: 9.6rem !important; }
   .wrapper.has-basket {
     padding-bottom: 4rem; }
 
@@ -1411,9 +1411,9 @@ a {
     margin-bottom: .9rem; }
     .catalog-card-sale__text {
       color: #DE2D42;
-      padding: .4rem 1.3rem;
+      padding: .4rem .6rem;
       line-height: 1rem;
-      font-size: 1rem;
+      font-size: .9rem;
       font-weight: 400;
       text-transform: uppercase; }
     .catalog-card-sale__num {
