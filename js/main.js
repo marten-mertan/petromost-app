@@ -162,7 +162,20 @@ $(function () {
         }else {
             $('.wrapper').removeClass('has-header');
         }
-        console.log('header-layout');
+        // console.log('header-layout');
+
+    });
+
+    $('.header-layout div').each(function(num, elem){
+
+        console.log(elem);
+
+        if($(elem).hasClass('search-area')){
+            $('.wrapper').addClass('has-search');
+        }else {
+            $('.wrapper').removeClass('has-search');
+        }
+        // console.log('header-layout');
 
     });
 

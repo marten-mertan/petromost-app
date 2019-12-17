@@ -37,6 +37,10 @@ a {
     //padding-top: 4.6rem;
 
     &.has-header {
+        padding-top: 4rem !important;
+    }
+
+    &.has-search {
         padding-top: 9.6rem !important;
     }
 

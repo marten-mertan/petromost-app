@@ -373,6 +373,8 @@ a {
   margin: 0 auto;
   min-height: 100%; }
   .wrapper.has-header {
+    padding-top: 4rem !important; }
+  .wrapper.has-search {
     padding-top: 9.6rem !important; }
   .wrapper.has-basket {
     padding-bottom: 4rem; }
