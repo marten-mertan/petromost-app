@@ -49,117 +49,151 @@
             <div class="order-address">
                 <div class="order-title">
                     <a href="#" class="order-title__link">
-                        <span>Адреса доставки</span>
-                        <svg class="icon-triangle">
-                            <use xlink:href="./img/icons/main.svg#icon-triangle"></use>
-                        </svg>
+                        <span>1. Выберите адрес доставки</span>
                     </a>
                 </div>
-                <div class="c-form">
-                    <div class="c-form-line">
-                        <label class="c-form-label">Город</label>
-                        <select class="c-form-select" name="delivery-add-city" id="">
-                            <option value="">Архангельск</option>
-                            <option value="">Москва</option>
-                            <option value="">Санкт-Петербург</option>
-                        </select>
-                    </div>
-                    <div class="c-form-line">
-                        <label class="c-form-label">Улица</label>
-                        <input type="text" class="c-form-input" name="delivery-add-street">
-                    </div>
-                    <div class="c-form-grid">
-                        <div class="c-form-col c-form-col--6">
-                            <div class="c-form-line">
-                                <label class="c-form-label">Дом</label>
-                                <input type="text" class="c-form-input" name="delivery-add-house">
-                            </div>
-                            <div class="c-form-line">
-                                <label class="c-form-label">Этаж</label>
-                                <input type="text" class="c-form-input" name="delivery-add-floor">
-                            </div>
-                        </div>
-                        <div class="c-form-col c-form-col--6">
-                            <div class="c-form-line">
-                                <label class="c-form-label">Подъезд</label>
-                                <input type="text" class="c-form-input" name="delivery-add-porch">
-                            </div>
-                            <div class="c-form-line">
-                                <label class="c-form-label">Кв./Офис</label>
-                                <input type="text" class="c-form-input" name="delivery-add-flat">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="order-time">
-                <div class="c-tabs">
-                    <ul class="c-tabs-menu">
-                        <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
-                        <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
-                    </ul>
-                    <form action="" method="post">
-                        <div class="c-tabs-body">
-                            <div id="menu-time-1" class="tab-content">
-                                <div class="popup-menu-time__grid">
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text through">
-                                            <input type="hidden" name="menu-time-today-1" id="menu-time-today-1" value="09:30 - 12:30">
-                                            <label for="menu-time-today-1">09:30 - 12:30</label>
-                                        </div>
-                                    </div>
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text through">
-                                            <input type="hidden" name="menu-time-today-1" id="menu-time-today-2" value="12:30 - 15:30">
-                                            <label for="menu-time-today-2">12:30 - 15:30</label>
-                                        </div>
-                                    </div>
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text">
-                                            <input type="radio" name="menu-time-today-1" id="menu-time-today-3" value="15:30 - 18:30" checked>
-                                            <label for="menu-time-today-3">15:30 - 18:30</label>
-                                        </div>
-                                    </div>
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text">
-                                            <input type="radio" name="menu-time-today-1" id="menu-time-today-4" value="18:30 - 21:00">
-                                            <label for="menu-time-today-4">18:30 - 21:00</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="menu-time-2" class="tab-content">
-                                <div class="popup-menu-time__grid">
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text">
-                                            <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-1" value="09:30 - 12:30">
-                                            <label for="menu-time-tomorrow-1">09:30 - 12:30</label>
-                                        </div>
-                                    </div>
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text">
-                                            <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-2" value="12:30 - 15:30">
-                                            <label for="menu-time-tomorrow-2">12:30 - 15:30</label>
-                                        </div>
-                                    </div>
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text">
-                                            <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-3" value="15:30 - 18:30">
-                                            <label for="menu-time-tomorrow-3">15:30 - 18:30</label>
-                                        </div>
-                                    </div>
-                                    <div class="popup-menu-time__col">
-                                        <div class="popup-menu-time__text">
-                                            <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-4" value="18:30 - 21:00">
-                                            <label for="menu-time-tomorrow-4">18:30 - 21:00</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
 
+                <div class="order-address-select">
+                    <div class="profile-data-field">
+                        <label class="profile-data-label">
+                            <span>ФИО</span>
+                            <input type="text" name="profile-data-user" value="г. Архангельск, ул.Лихтенштейна, 5, корп. 3, кв. 6 " readonly class="profile-data-input">
+                        </label>
+                    </div>
                 </div>
+
+                <div class="order-address-add">
+                    <a href="#" class="c-btn order-address-add__btn">
+                        <svg class="icon-plus">
+                            <use xlink:href="./img/icons/main.svg#icon-plus"/>
+                        </svg>
+                        Новый адрес
+                    </a>
+                </div>
+
+                <!--<div class="order-address-new">-->
+                    <!--<form action="" method="post" class="c-form">-->
+                        <!--<div class="c-form-line">-->
+                            <!--<label class="c-form-label">Город</label>-->
+                            <!--<select class="c-form-select" name="delivery-add-city" id="">-->
+                                <!--<option value="">Архангельск</option>-->
+                                <!--<option value="">Москва</option>-->
+                                <!--<option value="">Санкт-Петербург</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<div class="c-form-line">-->
+                            <!--<label class="c-form-label">Улица</label>-->
+                            <!--<input type="text" class="c-form-input" name="delivery-add-street">-->
+                        <!--</div>-->
+                        <!--<div class="c-form-grid">-->
+                            <!--<div class="c-form-col c-form-col&#45;&#45;6">-->
+                                <!--<div class="c-form-line">-->
+                                    <!--<label class="c-form-label">Дом</label>-->
+                                    <!--<input type="text" class="c-form-input" name="delivery-add-house">-->
+                                <!--</div>-->
+                                <!--<div class="c-form-line">-->
+                                    <!--<label class="c-form-label">Этаж</label>-->
+                                    <!--<input type="text" class="c-form-input" name="delivery-add-floor">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="c-form-col c-form-col&#45;&#45;6">-->
+                                <!--<div class="c-form-line">-->
+                                    <!--<label class="c-form-label">Подъезд</label>-->
+                                    <!--<input type="text" class="c-form-input" name="delivery-add-porch">-->
+                                <!--</div>-->
+                                <!--<div class="c-form-line">-->
+                                    <!--<label class="c-form-label">Кв./Офис</label>-->
+                                    <!--<input type="text" class="c-form-input" name="delivery-add-flat">-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<input type="button" class="c-btn" name="order-address-new__save" value="Сохранить">-->
+                    <!--</form>-->
+                <!--</div>-->
+
+            </div>
+
+
+
+            <div class="order-time">
+
+                <div class="order-title">
+                    <a href="#" class="order-title__link">
+                        <span>2. выберите время доставки</span>
+                    </a>
+                </div>
+
+                <div class="order-time-tabs">
+                    <div class="c-tabs">
+                        <ul class="c-tabs-menu">
+                            <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
+                            <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
+                        </ul>
+                        <form action="" method="post">
+                            <div class="c-tabs-body">
+                                <div id="menu-time-1" class="tab-content">
+                                    <div class="popup-menu-time__grid">
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text through">
+                                                <input type="hidden" name="menu-time-today-1" id="menu-time-today-1" value="09:30 - 12:30">
+                                                <label for="menu-time-today-1">09:30 - 12:30</label>
+                                            </div>
+                                        </div>
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text through">
+                                                <input type="hidden" name="menu-time-today-1" id="menu-time-today-2" value="12:30 - 15:30">
+                                                <label for="menu-time-today-2">12:30 - 15:30</label>
+                                            </div>
+                                        </div>
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text">
+                                                <input type="radio" name="menu-time-today-1" id="menu-time-today-3" value="15:30 - 18:30" checked>
+                                                <label for="menu-time-today-3">15:30 - 18:30</label>
+                                            </div>
+                                        </div>
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text">
+                                                <input type="radio" name="menu-time-today-1" id="menu-time-today-4" value="18:30 - 21:00">
+                                                <label for="menu-time-today-4">18:30 - 21:00</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="menu-time-2" class="tab-content">
+                                    <div class="popup-menu-time__grid">
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text">
+                                                <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-1" value="09:30 - 12:30">
+                                                <label for="menu-time-tomorrow-1">09:30 - 12:30</label>
+                                            </div>
+                                        </div>
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text">
+                                                <input type="hidden" name="menu-time-today-1" id="menu-time-tomorrow-2" value="12:30 - 15:30">
+                                                <label for="menu-time-tomorrow-2">12:30 - 15:30</label>
+                                            </div>
+                                        </div>
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text">
+                                                <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-3" value="15:30 - 18:30">
+                                                <label for="menu-time-tomorrow-3">15:30 - 18:30</label>
+                                            </div>
+                                        </div>
+                                        <div class="popup-menu-time__col">
+                                            <div class="popup-menu-time__text">
+                                                <input type="radio" name="menu-time-today-1" id="menu-time-tomorrow-4" value="18:30 - 21:00">
+                                                <label for="menu-time-tomorrow-4">18:30 - 21:00</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
             </div>
 
             <div class="order-delivery">
@@ -277,6 +311,127 @@
 </div>
 
 
+<div class="mfp-wrap popup-address">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="delivery">
+                            <form action="" method="POST">
+                                <div class="delivery-list">
+                                    <!--START delivery-list__item-->
+                                    <div class="delivery-list__item">
+                                        <div class="delivery-card">
+                                            <input type="radio" name="delivery-address" id="delivery-address-1" class="c-radio-input" checked="">
+                                            <label for="delivery-address-1" class="c-radio-label">
+                                                <span class="delivery-card-text">адрес выбран как основной</span>
+                                                <span>г.Архангельсу, ул.Лихтенштейна, д.45, кв.89</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--END delivery-list__item-->
+                                    <!--START delivery-list__item-->
+                                    <div class="delivery-list__item">
+                                        <div class="delivery-card">
+                                            <input type="radio" name="delivery-address" id="delivery-address-2" class="c-radio-input">
+                                            <label for="delivery-address-2" class="c-radio-label"><span>г.Архангельсу, ул.Лихтенштейна, д.45, кв.89</span></label>
+                                        </div>
+                                    </div>
+                                    <!--END delivery-list__item-->
+                                    <!--START delivery-list__item-->
+                                    <div class="delivery-list__item">
+                                        <div class="delivery-card">
+                                            <a href="https://abestuzhev.github.io/petromost-app/delivery-address-add.html" class="delivery-card-add">
+                                                <svg class="icon-plus">
+                                                    <use xlink:href="./img/icons/main.svg#icon-plus"></use>
+                                                </svg>
+                                                <span>Новый адрес</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--END delivery-list__item-->
+                                </div>
+                            </form>
+
+
+
+                            <div class="c-btn-layout c-btn-layout--center">
+                                <a href="#" class="c-btn">сохранить изменения</a>
+                            </div>
+                        </div>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-wrap popup-address-new">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="delivery-add">
+                            <form action="" method="POST" class="c-form delivery-add-form">
+                                <div class="c-form-line">
+                                    <label class="c-form-label">Город</label>
+                                    <select class="c-form-select" name="delivery-add-city" id="">
+                                        <option value="">Архангельск</option>
+                                        <option value="">Москва</option>
+                                        <option value="">Санкт-Петербург</option>
+                                    </select>
+                                </div>
+                                <div class="c-form-line">
+                                    <label class="c-form-label">Улица</label>
+                                    <input type="text" class="c-form-input" name="delivery-add-street">
+                                </div>
+                                <div class="c-form-grid">
+                                    <div class="c-form-col c-form-col--6">
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Дом</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-house">
+                                        </div>
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Этаж</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-floor">
+                                        </div>
+                                    </div>
+                                    <div class="c-form-col c-form-col--6">
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Подъезд</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-porch">
+                                        </div>
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Кв./Офис</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-flat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="c-btn-layout c-btn-layout--center">
+                                <a href="https://abestuzhev.github.io/petromost-app/delivery-address.html" class="c-btn">сохранить изменения</a>
+                            </div>
+                        </div>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="mfp-wrap popup-card">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
@@ -357,7 +512,7 @@
                 <div class="popup-box">
                     <div class="popup-menu-head">
                         <div class="header-logo">
-                            <a href="https://abestuzhev.github.io/petromost-app/https://abestuzhev.github.io/petromost-app/home.html">
+                            <a href="https://abestuzhev.github.io/petromost-app/home.html">
                                 <img src="./img/logo.png" alt="">
                             </a>
                         </div>

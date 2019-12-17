@@ -389,14 +389,22 @@ $(function () {
 
     showPopup(".order-card-number__icon", '.popup-card');
     showPopup("#order-data-link", '.popup-user');
-    showPopup(".header-menu", '.popup-mmenu');
+    showPopup(".header-menu", '.popup-menu');
+    showPopup(".order-address-select", '.popup-address');
+    showPopup(".order-address-add__btn", '.popup-address-new');
 
 
 
     $('.js-phone-mobile-mask').mask('0(000)000-00-00', {clearIfNotMatch: true});
     $('.js-phone-stationary-mask').mask('00-00-00', {clearIfNotMatch: true});
 
-    
+
+
+    $(document).on('click', '.popup-address .delivery-card-add', function(e){
+        e.preventDefault();
+        $('.js-popup-close').trigger('click');
+        $('.order-address-add__btn').trigger('click');
+    });
     
     /*кастомный скролл в корзине*/
     // $(".popup-basket__body").mCustomScrollbar({

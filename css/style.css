@@ -846,11 +846,12 @@ a {
     width: 100%;
     background-color: transparent; }
   .c-form-select {
-    padding: .6rem 1rem;
+    padding: .8rem 1rem;
     border: none;
     font-weight: 300;
-    font-size: 1.2rem;
-    background: none; }
+    font-size: 1.4rem;
+    background: none;
+    width: 100%; }
 
 @-webkit-keyframes scaleUp {
   0% {
@@ -1786,7 +1787,8 @@ a {
     font-weight: 300;
     font-size: 1.2rem;
     color: #000000;
-    padding: 0 .6rem; }
+    padding: 0 .6rem;
+    border-radius: 5rem; }
   .profile-data-input {
     border: none;
     outline: none;
@@ -1794,7 +1796,8 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1;
-    border-radius: .6rem; }
+    border-radius: .6rem;
+    width: 100%; }
 
 .order-history {
   margin-bottom: 3.4rem;
@@ -2169,8 +2172,7 @@ a {
   .order-card {
     padding: 2rem 1rem;
     background: url(../img/category-img-2.jpg) 0 0 no-repeat;
-    background-size: cover;
-    margin-bottom: 1.5rem; }
+    background-size: cover; }
     .order-card__title {
       color: #ffffff;
       font-size: 2.1rem;
@@ -2217,7 +2219,7 @@ a {
               -ms-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%); }
   .order-title {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
     line-height: 1;
     color: #434D54;
     text-transform: uppercase;
@@ -2308,10 +2310,45 @@ a {
       color: #000000;
       margin-bottom: 1.1rem; }
   .order-address {
-    padding: 0 1rem;
-    margin-bottom: 1.6rem; }
+    padding: 1.5rem 1rem 1rem;
+    margin-bottom: 1.6rem;
+    background: #EFF6FB; }
     .order-address .c-form {
       padding: 0; }
+    .order-address .order-title {
+      margin-bottom: 2.8rem; }
+    .order-address-add {
+      text-align: right; }
+      .order-address-add__btn svg {
+        fill: #fff;
+        position: relative;
+        top: 2px; }
+    .order-address-new {
+      padding: 1.5rem 0 1rem; }
+    .order-address-select {
+      margin-bottom: 1.5rem;
+      position: relative; }
+      .order-address-select .profile-data-input {
+        padding-right: 3.3rem;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
+      .order-address-select::after {
+        content: '';
+        position: absolute;
+        top: 2rem;
+        right: 1.6rem;
+        border: .4rem solid transparent;
+        border-top: .5rem solid #000; }
+  .order-time {
+    padding: 1.5rem 1rem 1rem;
+    background: #EFF6FB; }
+    .order-time-tabs {
+      margin-left: -1rem;
+      margin-right: -1rem; }
+    .order-time .order-title {
+      margin-bottom: 1.5rem; }
   .order-data {
     padding: 2rem 1rem;
     border-bottom: 1px solid #DBE3E9;
@@ -2523,6 +2560,12 @@ a {
   .popup-body {
     position: relative;
     z-index: 10; }
+
+.popup-address .delivery-list__item:first-child {
+  border: none; }
+
+.popup-address-new .delivery-add {
+  background: none; }
 
 .entrance {
   padding: 0 2rem; }

@@ -1141,6 +1141,7 @@
                 font-size: 1.2rem;
                 color: #000000;
                 padding: 0 .6rem;
+                border-radius: 5rem;
             }
         }
 
@@ -1152,6 +1153,7 @@
             font-weight: 400;
             line-height: 1;
             border-radius: .6rem;
+            width: 100%;
         }
     }
 }
@@ -1673,7 +1675,6 @@
         background: url(../img/category-img-2.jpg) 0 0 no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
-        margin-bottom: 1.5rem;
 
         &__title {
             color: #ffffff;
@@ -1725,7 +1726,7 @@
     }
 
     &-title {
-        font-size: 2.1rem;
+        font-size: 1.6rem;
         line-height: 1;
         color: #434D54;
         text-transform: uppercase;
@@ -1846,11 +1847,69 @@
     }
 
     &-address {
-        padding: 0 1rem;
+        padding: 1.5rem 1rem 1rem;
         margin-bottom: 1.6rem;
+        background: #EFF6FB;
 
         .c-form {
             padding: 0;
+        }
+
+        .order-title {
+            margin-bottom: 2.8rem;
+        }
+
+        &-add {
+            text-align: right;
+
+            &__btn {
+
+                svg {
+                    fill: #fff;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+
+        &-new {
+
+            padding: 1.5rem 0 1rem;
+        }
+
+        &-select {
+            margin-bottom: 1.5rem;
+            position: relative;
+
+            .profile-data-input {
+                padding-right: 3.3rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 2rem;
+                right: 1.6rem;
+                border: .4rem solid transparent;
+                border-top: .5rem solid #000;
+            }
+        }
+    }
+
+    &-time {
+        padding: 1.5rem 1rem 1rem;
+        background: #EFF6FB;
+
+        &-tabs {
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+
+        .order-title {
+            margin-bottom: 1.5rem;
         }
     }
 
@@ -2123,6 +2182,14 @@
     }
 }
 
+
+.popup-address .delivery-list__item:first-child {
+    border: none;
+}
+
+.popup-address-new .delivery-add {
+    background: none;
+}
 
 .entrance {
     padding: 0 2rem;
