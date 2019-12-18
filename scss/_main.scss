@@ -1792,6 +1792,8 @@
 
     &-delivery {
         padding: 2rem 1rem;
+        background: #EFF6FB;
+        margin-bottom: 2rem;
     }
 
     &-change {
@@ -1806,7 +1808,7 @@
         }
 
         &-label {
-            padding: 1rem 2rem 1rem 5rem;
+            padding: 1rem 1.1rem 1rem 3.5rem;
             position: relative;
             border-radius: 15rem;
             display: inline-block;
@@ -1814,9 +1816,13 @@
 
             svg {
                 position: absolute;
-                left: 2.3rem;
+                left: 1.1rem;
                 top: 50%;
                 transform: translateY(-50%);
+
+                &.icon-rouble {
+                    left: 1.7rem;
+                }
             }
         }
 
@@ -1835,8 +1841,9 @@
     }
 
     &-pay {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem .1rem;
         background: #EFF6FB;
+        margin-bottom: 2rem;
 
         &-text {
             font-size: 1.2rem;
@@ -1848,7 +1855,7 @@
 
     &-address {
         padding: 1.5rem 1rem 1rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 2rem;
         background: #EFF6FB;
 
         .c-form {
@@ -1880,6 +1887,9 @@
         &-select {
             margin-bottom: 1.5rem;
             position: relative;
+            border: .1rem solid #DBE3E9;
+            border-radius: .6rem;
+            background-color: #fff;
 
             .profile-data-input {
                 padding-right: 3.3rem;
@@ -1888,10 +1898,16 @@
                 overflow: hidden;
             }
 
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+            }
+
             &::after {
                 content: '';
                 position: absolute;
-                top: 2rem;
+                top: 1.4rem;
                 right: 1.6rem;
                 border: .4rem solid transparent;
                 border-top: .5rem solid #000;
@@ -1902,10 +1918,58 @@
     &-time {
         padding: 1.5rem 1rem 1rem;
         background: #EFF6FB;
+        margin-bottom: 2rem;
 
         &-tabs {
             margin-left: -1rem;
             margin-right: -1rem;
+
+            .c-tabs-body {
+                background-color: transparent;
+                padding: 1rem 1.5rem 0;
+            }
+
+            .popup-menu-time__text {
+                color: #000000;
+            }
+
+            .popup-menu-time__grid {
+                display: block;
+            }
+
+            .popup-menu-time__col {
+                width: 100%;
+                text-align: center;
+                padding: 1rem 0;
+            }
+
+            .c-tabs-menu {
+                padding: 0 1.2rem;
+            }
+
+            .c-tabs-menu__item a,
+            .c-tabs-menu__item {
+                border-radius: 150rem;
+            }
+
+            .popup-menu-time__text input[type="radio"]:checked + label {
+                color: #5AB55E;
+                font-weight: 700;
+                border: none;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    width: 1.4rem;
+                    height: .7rem;
+                    position: absolute;
+                    left: -1.5rem;
+                    top: .7rem;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    background: url(../img/icons/icon-dowble-check.png) 0 0 no-repeat;
+                }
+            }
         }
 
         .order-title {
@@ -1917,6 +1981,7 @@
         padding: 2rem 1rem;
         border-bottom: 1px solid #DBE3E9;
         margin-bottom: 2rem;
+        background: #EFF6FB;
 
         &__body {
 

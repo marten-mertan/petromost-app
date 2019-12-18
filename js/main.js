@@ -403,7 +403,7 @@ $(function () {
     showPopup(".order-card-number__icon", '.popup-card');
     showPopup("#order-data-link", '.popup-user');
     showPopup(".header-menu", '.popup-menu');
-    showPopup(".order-address-select", '.popup-address');
+    // showPopup(".order-address-select", '.popup-address');
     showPopup(".order-address-add__btn", '.popup-address-new');
 
 

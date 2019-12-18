@@ -57,9 +57,15 @@
                     <div class="profile-data-field">
                         <label class="profile-data-label">
                             <span>ФИО</span>
-                            <input type="text" name="profile-data-user" value="г. Архангельск, ул.Лихтенштейна, 5, корп. 3, кв. 6 " readonly class="profile-data-input">
+                            <select class="c-form-select" name="delivery-add-address" id="delivery-add-address">
+                                <option value="">г. Архангельск, ул. Карла Либнехта, 2</option>
+                                <option value="">г. Москва, Третья Улица Строителей, 2</option>
+                                <option value="">г. Санкт-Петербург, ул. Верейская, 29</option>
+                            </select>
                         </label>
                     </div>
+
+
                 </div>
 
                 <div class="order-address-add">
@@ -147,7 +153,7 @@
                                         </div>
                                         <div class="popup-menu-time__col">
                                             <div class="popup-menu-time__text">
-                                                <input type="radio" name="menu-time-today-1" id="menu-time-today-3" value="15:30 - 18:30" checked>
+                                                <input type="radio" name="menu-time-today-1" id="menu-time-today-3" value="15:30 - 18:30" checked="">
                                                 <label for="menu-time-today-3">15:30 - 18:30</label>
                                             </div>
                                         </div>
@@ -197,7 +203,7 @@
             </div>
 
             <div class="order-delivery">
-                <div class="order-title">Способ доставки</div>
+                <div class="order-title">3. Выберите способ доставки</div>
                 <div class="order-change">
                     <div class="order-change__item">
                         <input type="radio" name="order-change-delivery" id="order-change-delivery-1" class="order-change-input">
@@ -218,31 +224,6 @@
                         </label>
                     </div>
                 </div>
-            </div>
-
-            <div class="order-pay">
-                <div class="order-title">Способ оплаты</div>
-                <div class="order-pay-text">Оплата происходит при получении товара.</div>
-                <div class="order-change">
-                    <div class="order-change__item">
-                        <input type="radio" name="order-change-pay" id="order-change-1" class="order-change-input" checked>
-                        <label class="order-change-label" for="order-change-1">
-                            <svg class="icon-card">
-                                <use xlink:href="./img/icons/main.svg#icon-card"></use>
-                            </svg>
-                            <span>картой</span>
-                        </label>
-                    </div>
-                    <div class="order-change__item">
-                        <input type="radio" name="order-change-pay" id="order-change-2" class="order-change-input">
-                        <label class="order-change-label" for="order-change-2">
-                            <svg class="icon-small-car">
-                                <use xlink:href="./img/icons/main.svg#icon-small-car"></use>
-                            </svg>
-                            <span>наличными</span>
-                        </label>
-                    </div>
-                </div>
                 <div class="c-checkbox">
                     <input type="checkbox" name="order-delivery-agreement" id="order-delivery-agreement" class="c-checkbox-input" checked="checked">
                     <label for="order-delivery-agreement" class="c-checkbox-label">
@@ -253,10 +234,36 @@
                 </div>
             </div>
 
+            <div class="order-pay">
+                <div class="order-title">4. Выберите способ оплаты</div>
+                <div class="order-pay-text">Оплата происходит при получении товара.</div>
+                <div class="order-change">
+                    <div class="order-change__item">
+                        <input type="radio" name="order-change-pay" id="order-change-1" class="order-change-input" checked>
+                        <label class="order-change-label" for="order-change-1">
+                            <svg class="icon-card">
+                                <use xlink:href="./img/icons/main.svg#icon-card"></use>
+                            </svg>
+                            <span>Банковская карта</span>
+                        </label>
+                    </div>
+                    <div class="order-change__item">
+                        <input type="radio" name="order-change-pay" id="order-change-2" class="order-change-input">
+                        <label class="order-change-label" for="order-change-2">
+                            <svg class="icon-rouble">
+                                <use xlink:href="./img/icons/main.svg#icon-rouble"></use>
+                            </svg>
+                            <span>Наличные</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="order-data">
                 <div class="order-title">
                     <a href="#" class="order-title__link" id="order-data-link">
-                        <span>Ваши данные</span>
+                        <span>5. проверьте ваши данные</span>
                         <svg class="icon-pencil">
                             <use xlink:href="./img/icons/main.svg#icon-pencil"></use>
                         </svg>

@@ -343,6 +343,13 @@ div {
   width: 1em;
   height: .7em; }
 
+.icon-rouble {
+  display: inline-block;
+  fill: #434D54;
+  font-size: 1rem;
+  width: 1em;
+  height: 1.3em; }
+
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -2267,7 +2274,9 @@ a {
     padding: 0 1rem;
     margin-bottom: 2rem; }
   .order-delivery {
-    padding: 2rem 1rem; }
+    padding: 2rem 1rem;
+    background: #EFF6FB;
+    margin-bottom: 2rem; }
   .order-change {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2284,18 +2293,20 @@ a {
             align-items: stretch;
     margin-bottom: 1.7rem; }
     .order-change-label {
-      padding: 1rem 2rem 1rem 5rem;
+      padding: 1rem 1.1rem 1rem 3.5rem;
       position: relative;
       border-radius: 15rem;
       display: inline-block;
       letter-spacing: 0.05rem; }
       .order-change-label svg {
         position: absolute;
-        left: 2.3rem;
+        left: 1.1rem;
         top: 50%;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); }
+        .order-change-label svg.icon-rouble {
+          left: 1.7rem; }
     .order-change-input {
       display: none; }
       .order-change-input:checked + .order-change-label {
@@ -2304,8 +2315,9 @@ a {
         .order-change-input:checked + .order-change-label svg {
           fill: #fff; }
   .order-pay {
-    padding: 2rem 1rem;
-    background: #EFF6FB; }
+    padding: 2rem 1rem .1rem;
+    background: #EFF6FB;
+    margin-bottom: 2rem; }
     .order-pay-text {
       font-size: 1.2rem;
       line-height: 1.4rem;
@@ -2313,7 +2325,7 @@ a {
       margin-bottom: 1.1rem; }
   .order-address {
     padding: 1.5rem 1rem 1rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
     background: #EFF6FB; }
     .order-address .c-form {
       padding: 0; }
@@ -2329,32 +2341,71 @@ a {
       padding: 1.5rem 0 1rem; }
     .order-address-select {
       margin-bottom: 1.5rem;
-      position: relative; }
+      position: relative;
+      border: .1rem solid #DBE3E9;
+      border-radius: .6rem;
+      background-color: #fff; }
       .order-address-select .profile-data-input {
         padding-right: 3.3rem;
         -o-text-overflow: ellipsis;
            text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden; }
+      .order-address-select select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
       .order-address-select::after {
         content: '';
         position: absolute;
-        top: 2rem;
+        top: 1.4rem;
         right: 1.6rem;
         border: .4rem solid transparent;
         border-top: .5rem solid #000; }
   .order-time {
     padding: 1.5rem 1rem 1rem;
-    background: #EFF6FB; }
+    background: #EFF6FB;
+    margin-bottom: 2rem; }
     .order-time-tabs {
       margin-left: -1rem;
       margin-right: -1rem; }
+      .order-time-tabs .c-tabs-body {
+        background-color: transparent;
+        padding: 1rem 1.5rem 0; }
+      .order-time-tabs .popup-menu-time__text {
+        color: #000000; }
+      .order-time-tabs .popup-menu-time__grid {
+        display: block; }
+      .order-time-tabs .popup-menu-time__col {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0; }
+      .order-time-tabs .c-tabs-menu {
+        padding: 0 1.2rem; }
+      .order-time-tabs .c-tabs-menu__item a,
+      .order-time-tabs .c-tabs-menu__item {
+        border-radius: 150rem; }
+      .order-time-tabs .popup-menu-time__text input[type="radio"]:checked + label {
+        color: #5AB55E;
+        font-weight: 700;
+        border: none;
+        position: relative; }
+        .order-time-tabs .popup-menu-time__text input[type="radio"]:checked + label::after {
+          content: '';
+          width: 1.4rem;
+          height: .7rem;
+          position: absolute;
+          left: -1.5rem;
+          top: .7rem;
+          background-size: cover;
+          background: url(../img/icons/icon-dowble-check.png) 0 0 no-repeat; }
     .order-time .order-title {
       margin-bottom: 1.5rem; }
   .order-data {
     padding: 2rem 1rem;
     border-bottom: 1px solid #DBE3E9;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    background: #EFF6FB; }
     .order-data__text {
       font-size: 1.4rem;
       line-height: 1.8rem;
