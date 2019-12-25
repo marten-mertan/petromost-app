@@ -385,6 +385,8 @@ a {
     padding-top: 9.6rem !important; }
   .wrapper.has-basket {
     padding-bottom: 4rem; }
+  .wrapper.has-back {
+    padding-top: 8.6rem !important; }
 
 .slick-dots {
   bottom: -1.8rem;
@@ -903,7 +905,8 @@ a {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
   .header-transparent {
     padding: 1rem;
     background-color: transparent; }
