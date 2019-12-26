@@ -37,20 +37,21 @@ a {
     //padding-top: 4.6rem;
 
     &.has-header {
-        padding-top: 4rem !important;
+        // padding-top: 4rem !important;
+        padding-top: 4rem;
     }
 
-    &.has-search {
-        padding-top: 9.6rem !important;
-    }
+    // &.has-search {
+    //     padding-top: 9.6rem !important;
+    // }
 
-    &.has-basket {
-        padding-bottom: 4rem;
-    }
+    // &.has-basket {
+    //     padding-bottom: 4rem;
+    // }
 
-    &.has-back {
-        padding-top: 8.6rem !important;
-    }
+    // &.has-back {
+    //     padding-top: 8.6rem !important;
+    // }
 }
 
 .slick-dots {

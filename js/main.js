@@ -182,21 +182,6 @@ $(function () {
         }
     });
 
-    // function addPaddingWrapper (elemEach, elemClass, wrapperClass){
-    //     $(elemEach).each(function(num, elem){
-    //
-    //         if($(elem).hasClass(elemClass)){
-    //             $('.wrapper').addClass(wrapperClass);
-    //         }else {
-    //             $('.wrapper').removeClass(wrapperClass);
-    //         }
-    //     });
-    // }
-
-    // addPaddingWrapper('.header-layout a', 'header-back', 'has-back');
-    // addPaddingWrapper('.catalog-basket', 'header-layout', 'has-basket');
-    // addPaddingWrapper('.header-layout div', 'search-area', 'has-search');
-    // addPaddingWrapper('.header-layout div', 'search-area', 'has-search');
 
     $('.catalog-basket').each(function(){
 
@@ -207,6 +192,10 @@ $(function () {
         }
 
     });
+
+    // отступ сверху wrapper для фиксированной шапки
+    let headerHeight = $('.header-layout').height();
+    $('.wrapper').css('padding-top', headerHeight + 'px');
 
     function fix_size($img, $parentImg) {
         var images = $($img);
