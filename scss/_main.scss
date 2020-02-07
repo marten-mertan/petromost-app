@@ -1664,10 +1664,20 @@
     .c-product-card__img {
         max-width: 11rem;
         flex: 1 0 11rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
     }
 
     .c-product-card-operation__count {
         margin-bottom: 1rem;
+    }
+
+    .c-product-card__img img {
+        display: inline-block;
+        width: auto;
+        height: auto;
     }
 }
 

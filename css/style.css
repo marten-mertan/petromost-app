@@ -2172,10 +2172,23 @@ a {
   max-width: 11rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 11rem;
-          flex: 1 0 11rem; }
+          flex: 1 0 11rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: auto; }
 
 .basket .c-product-card-operation__count {
   margin-bottom: 1rem; }
+
+.basket .c-product-card__img img {
+  display: inline-block;
+  width: auto;
+  height: auto; }
 
 .order {
   margin-bottom: 3.2rem; }
