@@ -66,6 +66,25 @@ $(function () {
     console.log('posHead: ' + posHead);
     console.log(pos);
     var catalogBasket = $('.catalog-basket');
+    var heightBasketBtnSmall = 45;
+
+    // добавляет/удаляет отступ для всплывающей корзины
+    bottomPaddingBlock = {
+        add: function(block){
+            $(block).css({
+                'padding-bottom': heightBasketBtnSmall
+            });
+        },
+        remove: function(block){
+            $(block).css({
+                'padding-bottom': 0
+            });
+        },
+    }
+    
+    // отступ для корзины по умолчанию, т.к. всплывающая блок есть всегда
+    bottomPaddingBlock.add('.basket');
+    
 
     $(document).on('click', '.product-buy__price, .catalog-basket-head__info', function (e) {
         e.preventDefault();
@@ -80,6 +99,9 @@ $(function () {
         catalogBasket.css({
             'bottom': posHead
         });
+        // catalogBasket.addClass('init');
+        bottomPaddingBlock.add('.catalog');
+        
     });
     $(document).on('click', '.catalog-basket-title', function (e) {
         e.preventDefault();
@@ -148,6 +170,7 @@ $(function () {
             catalogBasket.css({
                 'bottom': -500
             });
+            bottomPaddingBlock.remove('.catalog');
         }
         // console.log('hide-catalog-basket');
 
@@ -222,6 +245,8 @@ $(function () {
     }
     $(window).on('resize', fix_size('.catalog-card__img img','.catalog-card__img'));
     fix_size('.catalog-card__img img','.catalog-card__img');
+    $(window).on('resize', fix_size('.basket .c-product-card__img img','.basket .c-product-card__img'));
+    fix_size('.basket .c-product-card__img img','.basket .c-product-card__img');
 
 
 
