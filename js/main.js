@@ -436,4 +436,9 @@ $(document).ready(function () {
     // });
 
     //footer script
+
+    /* catalog-category-new */
+    $(document).on('click', '.js-open-category', function (e) {
+        $('.js-category-dropdown').toggleClass('open');
+    });
 });
