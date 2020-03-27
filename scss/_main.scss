@@ -2958,3 +2958,61 @@
 .mod-pie-minus{
     display: none;
 }
+
+.catalog-card-sale{
+    &-left{
+        flex: 1 0 auto;
+        position: relative;
+        width: 67%;
+        text-transform: uppercase;
+        background-color: #fede39;
+        line-height: 1rem;
+        font-size: .9rem;
+        font-weight: 400;
+        color: #de2d42;
+        text-align: center;
+        padding: .4rem .6rem .4rem;
+    }
+    &-right{
+        position: relative;
+        flex: 0 1 auto;
+        text-transform: uppercase;
+        background-color: #de2d42;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        color: white;
+        text-align: center;
+        padding: .4rem 1.3rem .4rem 1.7rem;
+    }
+    &-text{
+        text-align: left;
+        font-size: .9rem;
+        line-height: 1rem;
+        font-weight: 400;
+    }
+    &-subtext{
+        font-size: .9rem;
+        line-height: 1rem;
+        font-weight: normal;
+        text-align: left;
+        color: #454a4b;
+        text-transform: none;
+    }
+    &-attention{
+        position: absolute;
+        top: .1rem;
+        right: -1.3rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        color: #de2d42;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: white;
+        border: 2px solid #fede39;
+        border-radius: 50%;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+}
