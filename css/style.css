@@ -3441,6 +3441,27 @@ a {
           box-sizing: border-box;
   z-index: 1; }
 
+.c-btn-layout--stretch {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.c-btn--fixed-width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  max-width: 20rem; }
+
+.order-address-select::after {
+  top: calc(50% - .2rem); }
+
 @media (min-width: 320px) {
   html {
     font-size: 10px; } }

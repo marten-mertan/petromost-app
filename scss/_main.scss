@@ -3029,3 +3029,19 @@
         z-index: 1;
     }
 }
+
+.c-btn-layout--stretch{
+    align-items: stretch;
+}
+
+.c-btn--fixed-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 20rem;
+}
+
+.order-address-select::after{
+    top: calc(50% - .2rem);
+}
