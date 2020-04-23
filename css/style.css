@@ -2234,6 +2234,16 @@ a {
         font-size: 1.8rem;
         font-weight: 700;
         line-height: 2.1rem; }
+        .order-card-number__text a {
+          text-decoration: none;
+          color: #ffffff;
+          pointer-events: none; }
+          .order-card-number__text a:active {
+            text-decoration: none;
+            color: #ffffff; }
+          .order-card-number__text a:hover {
+            text-decoration: none;
+            color: #ffffff; }
       .order-card-number__icon {
         width: 4rem;
         height: 4rem;
