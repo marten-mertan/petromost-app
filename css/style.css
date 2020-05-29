@@ -357,6 +357,13 @@ div {
   width: 1em;
   height: 1em; }
 
+.icon-laptop {
+  display: inline-block;
+  fill: #434D54;
+  font-size: 1.4rem;
+  width: 1.7em;
+  height: 1.2em; }
+
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -3461,6 +3468,61 @@ a {
 
 .order-address-select::after {
   top: calc(50% - .2rem); }
+
+.banner-back {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .7rem 3rem;
+  background-color: #dedede;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .banner-back .icon-laptop {
+    margin-right: 1rem; }
+  .banner-back__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none; }
+  .banner-back__text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #434D54; }
+  .banner-back__close {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem 1rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer; }
+  .banner-back.hidden {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden; }
 
 @media (min-width: 320px) {
   html {

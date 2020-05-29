@@ -487,4 +487,14 @@ $(document).ready(function () {
         $('.js-cart-all').addClass('mod-hide');
 
     });
+
+    // фиксированная шапка
+    let headerHeight = $('.header-layout').height();
+    $('.wrapper').css('padding-top', headerHeight + 'px');
+
+    $(document).on('click','.js-banner-close', function(e){
+        $('.banner-back').addClass('hidden');
+        let headerHeight = $('.header-layout').height();
+        $('.wrapper').css('padding-top', headerHeight + 'px');
+    });
 });

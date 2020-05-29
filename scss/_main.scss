@@ -3045,3 +3045,45 @@
 .order-address-select::after{
     top: calc(50% - .2rem);
 }
+
+//баннер перехода на старую мобильную версию
+.banner-back{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: .7rem 3rem;
+    background-color: #dedede;
+    align-items: center;
+    .icon-laptop {
+        margin-right: 1rem;
+    }
+    &__link{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-decoration: none;
+
+    }
+    &__text{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #434D54;
+    }
+    &__close{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 1rem;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+    &.hidden{
+        max-height: 0;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
