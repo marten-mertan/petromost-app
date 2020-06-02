@@ -498,5 +498,7 @@ $(document).ready(function () {
         $('.wrapper').css('padding-top', headerHeight + 'px');
     });
 
-    JsBarcode(".barcode").init();
+    if ($('.barcode').length){
+        JsBarcode('.barcode').init();
+    }
 });
