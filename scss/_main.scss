@@ -3104,8 +3104,10 @@
     position: relative;
     padding: .7rem;
     svg{
-        width: 100% !important;
-        height: auto !important;
+        display: block;
+        width: 100%;
+        height: 100%;
+        
     }
     text{
         fill: #808080;

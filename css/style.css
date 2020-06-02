@@ -3548,8 +3548,9 @@ a {
   position: relative;
   padding: .7rem; }
   .profile-data-barcode svg {
-    width: 100% !important;
-    height: auto !important; }
+    display: block;
+    width: 100%;
+    height: 100%; }
   .profile-data-barcode text {
     fill: #808080; }
 
