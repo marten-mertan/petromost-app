@@ -3103,6 +3103,10 @@
     border-radius: .6rem;
     position: relative;
     padding: .7rem;
+    svg{
+        width: 100% !important;
+        height: auto !important;
+    }
     text{
         fill: #808080;
     }
