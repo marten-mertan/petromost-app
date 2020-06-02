@@ -249,8 +249,8 @@ div {
   display: inline-block;
   fill: #434D54;
   font-size: 1.6rem;
-  width: 1em;
-  height: 1em; }
+  width: .6em;
+  height: .6em; }
 
 .icon-minus {
   display: inline-block;
@@ -1379,15 +1379,15 @@ a {
       top: -.2rem;
       display: block;
       text-decoration: none;
-      width: 3.4rem;
-      height: 3.4rem;
-      border-radius: .6rem;
+      width: 3rem;
+      height: 3rem;
+      border-radius: .4rem;
       border: .1rem solid #000; }
       .catalog-card-add__btn svg {
         position: absolute;
         fill: #000;
-        top: .7rem;
-        left: .8rem; }
+        top: .9rem;
+        left: .9rem; }
   .catalog-card-price {
     position: relative;
     padding-top: 1.4rem; }
@@ -3523,6 +3523,72 @@ a {
     padding: 0;
     opacity: 0;
     visibility: hidden; }
+
+.c-counter__btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 3rem;
+          flex: 1 0 3rem; }
+
+.profile-data-barcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: .1rem solid #DBE3E9;
+  border-radius: .6rem;
+  position: relative;
+  padding: .7rem; }
+  .profile-data-barcode text {
+    fill: #808080; }
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.66;
+  color: #232833;
+  font-weight: 300;
+  padding: 0 2rem;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  position: relative; }
+  .content h1 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #de2d42;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem; }
+  .content h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #000;
+    margin: 0 0 1.2rem 0;
+    position: relative;
+    line-height: 1.2; }
+  .content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    color: #232833;
+    font-weight: 300;
+    margin-bottom: 1.2rem; }
+  .content a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.66;
+    font-weight: normal;
+    color: #de2d42; }
 
 @media (min-width: 320px) {
   html {

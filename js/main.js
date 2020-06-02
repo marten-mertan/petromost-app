@@ -497,4 +497,6 @@ $(document).ready(function () {
         let headerHeight = $('.header-layout').height();
         $('.wrapper').css('padding-top', headerHeight + 'px');
     });
+
+    JsBarcode(".barcode").init();
 });
