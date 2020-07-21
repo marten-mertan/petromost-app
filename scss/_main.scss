@@ -3169,6 +3169,7 @@
         width: 100%;
     }
     &-content{
+        max-width: 41rem;
         padding: 1.4rem 2rem 1.4rem 1.3rem;
     }
     &-head{
@@ -3199,6 +3200,7 @@
             transition: all .4s ease;
             opacity: 0;
             visibility: hidden;
+            cursor: pointer;
             &.active{
                 opacity: 1;
                 visibility: visible;
@@ -3240,6 +3242,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1.2rem 0;
+            cursor: pointer;
             &__title{
                 font-style: normal;
                 font-weight: bold;
