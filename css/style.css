@@ -2463,6 +2463,16 @@ a {
       line-height: 1.8rem;
       color: #000000;
       margin-bottom: 1rem; }
+      .order-data__text a {
+        text-decoration: none;
+        color: black;
+        pointer-events: none; }
+        .order-data__text a:active {
+          text-decoration: none;
+          color: black; }
+        .order-data__text a:hover {
+          text-decoration: none;
+          color: black; }
       .order-data__text:last-child {
         margin-bottom: 0; }
   .order-agreement {
@@ -3977,6 +3987,16 @@ a {
       line-height: 1.8rem;
       letter-spacing: 0.05em;
       color: black; }
+      .order-step-head-item__text a {
+        text-decoration: none;
+        color: black;
+        pointer-events: none; }
+        .order-step-head-item__text a:active {
+          text-decoration: none;
+          color: black; }
+        .order-step-head-item__text a:hover {
+          text-decoration: none;
+          color: black; }
 
 .order-items {
   padding: 1.5rem 0 1rem; }
@@ -4075,8 +4095,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 1rem;
-  margin-bottom: 2rem; }
+  padding: 0 1rem 2rem; }
   .order-buttons__btn {
     background: #5ab55e;
     border-radius: 10rem;

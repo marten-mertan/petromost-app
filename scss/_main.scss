@@ -2021,7 +2021,19 @@
             line-height: 1.8rem;
             color: #000000;
             margin-bottom: 1rem;
-
+            a{
+                text-decoration: none;
+                color: black;
+                pointer-events: none;
+                &:active{
+                    text-decoration: none;
+                    color: black;
+                }
+                &:hover{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -3526,6 +3538,19 @@
                     line-height: 1.8rem;
                     letter-spacing: 0.05em;
                     color: black;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        pointer-events: none;
+                        &:active{
+                            text-decoration: none;
+                            color: black;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
 
                 }
             }
@@ -3629,8 +3654,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 1rem;
-        margin-bottom: 2rem;
+        padding: 0 1rem 2rem;
         &__btn{
             background: #5ab55e;
             border-radius: 10rem;
