@@ -73,6 +73,11 @@
                     <use xlink:href="./img/icons/main.svg#icon-triangle"/>
                 </svg>
             </a>
+            <div class="catalog-title__filter js-open-filter">
+                <svg class="icon-filter">
+                    <use xlink:href="./img/icons/main.svg#icon-filter"/>
+                </svg>
+            </div>
         </div>
         <div class="catalog-list">
             <!--START category-list__item-->
@@ -616,9 +621,139 @@
         </div>
     </div>
 </div>
+<div class="mfp-wrap popup-filter">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup popup-filter-content">
+                <div class="popup-box">
+                    <div class="popup-filter-head">
+                        <div class="popup-filter-head-row">
+                            <div class="popup-filter-head__decor js-filter-decor active"></div>
+                        </div>
+                        <div class="popup-filter-head-row">
+                            <div class="popup-filter-head__clear js-filter-clear active">Очистить</div>
+                            <div class="popup-filter-head__title">Фильтры</div>
+                            <a href="#" class="popup-close popup-filter-close">
+                                <svg class="icon-close">
+                                    <use xlink:href="./img/icons/main.svg#icon-close"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="popup-filter-body">
+                        <div class="popup-filter-category js-filter-category closed">
+                            <div class="popup-filter-category-head js-filter-category-head">
+                                <div class="popup-filter-category-head__title">Категория</div>
+                                <a href="#" class="popup-filter-category-head__arrow">
+                                    <svg class="icon-arrow-bottom">
+                                        <use xlink:href="./img/icons/main.svg#icon-arrow-bottom"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+                            <div class="popup-filter-category-body">
+                                <div class="popup-filter-category-form__item">
+                                    <div class="popup-filter-category-field">
+                                        <label class="popup-filter-category-label">
+                                            <input type="text" name="popup-filter-category-search" class="popup-filter-category-input" placeholder="Я ищу ...">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="popup-filter-category-multi">
+                                    <label class="popup-filter-category-check js-filter-check">Название категории
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="popup-filter-category-check js-filter-check">Название категории
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="popup-filter-category-check js-filter-check">Название категории
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="popup-filter-category-check js-filter-check">Название категории
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="popup-filter-category-check js-filter-check">Название категории
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="popup-filter-category-check js-filter-check">Длинное предлинное название категории для тестирования, чтобы не помещалось в экран
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="popup-filter-category-check js-filter-check">Название категории
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter-category js-filter-category">
+                            <div class="popup-filter-category-head js-filter-category-head">
+                                <div class="popup-filter-category-head__title">Цена</div>
+                                <a href="#" class="popup-filter-category-head__arrow">
+                                    <svg class="icon-arrow-bottom">
+                                        <use xlink:href="./img/icons/main.svg#icon-arrow-bottom"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="popup-filter-category-body">
+                                <div class="popup-filter-category-slider-inputs">
+                                    <div class="popup-filter-category-slider-field">
+                                        <label class="popup-filter-category-slider-label">
+                                            <input type="text" name="popup-filter-category-min" class="popup-filter-category-slider-input js-slider-min" value="0" min="0" max="5000">
+                                            <span>От</span>
+                                        </label>
+                                    </div>
+                                    <div class="popup-filter-category-slider-field">
+                                        <label class="popup-filter-category-slider-label">
+                                            <input type="text" name="popup-filter-category-max" class="popup-filter-category-slider-input js-slider-max" value="5000" min="0" max="5000">
+                                            <span>До</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="popup-filter-category-slider js-slider-filter" data-min="0" data-max="5000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter-category js-filter-category closed">
+                            <div class="popup-filter-category-head js-filter-category-head">
+                                <div class="popup-filter-category-head__title">Размер скидки</div>
+                                <a href="#" class="popup-filter-category-head__arrow">
+                                    <svg class="icon-arrow-bottom">
+                                        <use xlink:href="./img/icons/main.svg#icon-arrow-bottom"/>
+                                    </svg>
+                                </a>
+
+                            </div>
+                            <div class="popup-filter-category-body">
+                                <div class="popup-filter-category-buttons">
+                                    <a href="#" class="popup-filter-category__btn js-filter-btn">По убыванию</a>
+                                    <a href="#" class="popup-filter-category__btn js-filter-btn active">По возрастанию</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="popup-filter-submit">
+                            <a href="#" class="popup-filter-submit__btn">показать результат</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
 <script src="js/slick-1.8.1/slick/slick.min.js"></script>
 <script src="js/svg4everybody.min.js"></script>
 <script>svg4everybody(); // run it now or whenever you are ready</script>

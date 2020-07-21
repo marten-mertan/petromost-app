@@ -4142,6 +4142,15 @@ a {
     text-decoration: underline;
     color: #78858f; }
 
+.catalog-title__filter {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2rem;
+  float: right; }
+  .catalog-title__filter svg {
+    top: 0;
+    right: auto; }
+
 @media (min-width: 320px) {
   html {
     font-size: 10px; } }

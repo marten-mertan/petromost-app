@@ -3702,3 +3702,15 @@
         }
     }
 }
+
+.catalog-title__filter{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2rem;
+    float: right;
+    svg{
+        top: 0;
+        right: auto;
+
+    }
+}
