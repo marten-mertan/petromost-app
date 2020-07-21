@@ -596,4 +596,18 @@ $(document).ready(function () {
         $('.js-filter-clear').removeClass('active');
 
     });
+
+    $(document).on('click','.js-order-next', function(e){
+        e.preventDefault();
+        $(this).parents('.js-order-section').addClass('closed complete');
+        var nextEl = $('.js-order-section').not('.complete').first();
+        nextEl.removeClass('closed');
+    });
+
+    $(document).on('click','.js-order-back', function(e){
+        e.preventDefault();
+        $(this).parents('.js-order-section').addClass('closed').removeClass('complete');
+        var prevEl = $('.js-order-section.complete').last();
+        prevEl.removeClass('closed complete');
+    });
 });
