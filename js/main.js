@@ -585,6 +585,7 @@ $(document).ready(function () {
     
     $(document).on('click','.js-filter-clear', function(e){
         $('.js-filter-search').val('');
+        $('.js-filter-check').show();
         $('.js-filter-check input').prop('checked',false);
         $( ".js-slider-filter" ).slider( 'values', 0, Number($( ".js-slider-filter" ).data('min')));
         $( ".js-slider-filter" ).slider( 'values', 1, Number($( ".js-slider-filter" ).data('max')));
