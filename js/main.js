@@ -584,7 +584,7 @@ $(document).ready(function () {
     });
     
     $(document).on('click','.js-filter-clear', function(e){
-        $('.popup-filter-category-input').val('');
+        $('.js-filter-search').val('');
         $('.js-filter-check input').prop('checked',false);
         $( ".js-slider-filter" ).slider( 'values', 0, Number($( ".js-slider-filter" ).data('min')));
         $( ".js-slider-filter" ).slider( 'values', 1, Number($( ".js-slider-filter" ).data('max')));
@@ -609,5 +609,26 @@ $(document).ready(function () {
         $(this).parents('.js-order-section').addClass('closed').removeClass('complete');
         var prevEl = $('.js-order-section.complete').last();
         prevEl.removeClass('closed complete');
+    });
+
+    $('.js-filter-search').bind('input', function() {
+        var $this = $(this);
+        var delay = 300;
+        clearTimeout($this.data('timer'));
+        $this.data('timer', setTimeout(function(){
+            var value = $this.val().toLowerCase();
+            if (value){
+                $('.js-filter-check').each(function( index ) {
+                    var text = $(this).children('.js-filter-check-text').text().toLowerCase();
+                    if ((text).indexOf(value) !== -1){
+                        $(this).show();
+                    } else{
+                        $(this).hide();
+                    }
+                });
+            } else{
+                $('.js-filter-check').show();
+            }
+        }, delay));
     });
 });
