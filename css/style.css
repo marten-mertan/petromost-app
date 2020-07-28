@@ -4238,6 +4238,39 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.auth-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2.4rem; }
+  .auth-tabs-item {
+    display: block;
+    width: 50%;
+    padding: 1.3rem 1rem 1.1rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-top: 3px solid #e4ecf2;
+    text-decoration: none;
+    color: #434D54; }
+    .auth-tabs-item:not(:last-child) {
+      border-right: 3px solid #e4ecf2; }
+    .auth-tabs-item.active {
+      color: #de2d42;
+      border-top: none;
+      border-bottom: 3px solid #de2d42; }
+  .auth-tabs-content {
+    display: none; }
+    .auth-tabs-content.active {
+      display: block; }
+
 @media (min-width: 320px) {
   html {
     font-size: 10px; } }

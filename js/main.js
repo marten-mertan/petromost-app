@@ -632,4 +632,13 @@ $(document).ready(function () {
             }
         }, delay));
     });
+    
+    $(document).on('click','.js-auth-tab', function(e){
+        e.preventDefault();
+        $('.js-auth-tab').removeClass('active');
+        $(this).addClass('active');
+        let tab = $(this).data('tab');
+        $('.js-auth-tab-content').removeClass('active');
+        $('#'+tab).addClass('active');
+    });
 });
