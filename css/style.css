@@ -4454,6 +4454,11 @@ a {
 
 .delivery-list__item {
   position: relative; }
+  .delivery-list__item span {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
   .delivery-list__item.edit .delivery-card-options {
     opacity: 1;
     visibility: visible; }

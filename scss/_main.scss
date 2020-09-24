@@ -3945,6 +3945,10 @@
 
 .delivery-list__item{
     position: relative;
+    span{
+        user-select: none;
+
+    }
     &.edit{
         .delivery-card-options{
             opacity: 1;

@@ -677,7 +677,7 @@ $(document).ready(function () {
         }
     }
 
-    $(document).on('click', function(e){
+    $(document).on('mousedown', function(e){
         let element = $('.js-address-longtouch.edit');
         if (element.has(e.target).length === 0){
             element.removeClass('edit');
@@ -686,6 +686,8 @@ $(document).ready(function () {
     if ($('.js-address-longtouch').length){
         window.addEventListener("touchstart", addressTouchstart, false);
         window.addEventListener("touchend", addressTouchend, false);
+        window.addEventListener("mousedown", addressTouchstart, false);
+        window.addEventListener("mouseup", addressTouchend, false);
     }
     
     $(document).on('click','.js-repeat-order', function(e){
