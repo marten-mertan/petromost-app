@@ -114,7 +114,7 @@ $(document).ready(function () {
         $('html').addClass('blocked');
     });
 
-    $(document).on('click', '.popup-close, .popup-bg', function (e) {
+    $(document).on('click', '.popup-close, .popup-bg, .js-popup-close', function (e) {
         e.preventDefault();
         $('.popup-menu').removeClass('is-visible');
         $('.popup-bg').removeClass('is-visible');
@@ -641,4 +641,62 @@ $(document).ready(function () {
         $('.js-auth-tab-content').removeClass('active');
         $('#'+tab).addClass('active');
     });
+
+    // $(document).on('taphold','.js-address-longtouch', function(e){
+    //     e.preventDefault();
+    //     $(this).addClass('edit');
+    // });
+
+     
+
+    // функционал долгого нажатия
+
+    var onlongtouch; 
+    var timer, lockTimer;
+    var touchduration = 800;
+
+    function addressTouchstart(e) {
+        if(lockTimer){
+            return;
+        }
+        onlongtouch = function() { 
+            let element = $('.js-address-longtouch');
+            if (element.has(e.target).length !== 0){
+                element.removeClass('edit');
+                element.has(e.target).addClass('edit');
+            }
+        };
+        timer = setTimeout(onlongtouch, touchduration); 
+        lockTimer = true;
+    }
+
+    function addressTouchend() {
+        if (timer){
+            clearTimeout(timer);
+            lockTimer = false;
+        }
+    }
+
+    $(document).on('click', function(e){
+        let element = $('.js-address-longtouch.edit');
+        if (element.has(e.target).length === 0){
+            element.removeClass('edit');
+        }
+    });
+    if ($('.js-address-longtouch').length){
+        window.addEventListener("touchstart", addressTouchstart, false);
+        window.addEventListener("touchend", addressTouchend, false);
+    }
+    
+    $(document).on('click','.js-repeat-order', function(e){
+        e.preventDefault();
+    });
+
+    $(document).on('click','.js-fav', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
+
+    showPopup('.js-repeat-order', '.popup-attention');
+    showPopup('.js-sub-delete', '.popup-attention');
 });
