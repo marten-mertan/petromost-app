@@ -317,7 +317,8 @@ $(document).ready(function () {
         });
     }
 
-    catalogItemCounter('.fieldCount');
+    // дублируется на бэке
+    //catalogItemCounter('.fieldCount');
 
 
     //footer-bottom__scrollup
