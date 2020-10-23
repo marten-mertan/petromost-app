@@ -430,7 +430,7 @@
     &-card {
         position: relative;
         height: 100%;
-        padding: 1.4rem;
+        padding: 1.4rem 1.2rem;
         font-size: 1.2rem;
         display: flex;
         flex-flow: column wrap;
@@ -460,6 +460,24 @@
 
         }
 
+        &__label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: .3rem .5rem;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1rem;
+            line-height: 1rem;            
+            color: #949494;
+            max-width: 8rem;
+
+            background: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 1rem 0;
+            z-index: 8;
+
+        }
         &-label {
             position: absolute;
             top: 0;
@@ -531,19 +549,21 @@
             display: block;
             text-decoration: none;
             letter-spacing: 0.05rem;
-            margin-bottom: .6rem;
+            margin-bottom: .8rem;
 
             span {
                 display: block;
-                color: #000000;
+                font-style: normal;
+                font-size: 1.1rem;
+                color: #747474;
                 font-weight: 300;
-                line-height: 1.4rem;
+                line-height: 1.3rem;
             }
 
         }
 
         &__footer {
-
+            width: 100%;
             .catalog-card-sale {
                 margin-top: .5rem;
             }
@@ -552,71 +572,157 @@
         &-add {
             padding-right: 4rem;
             position: relative;
-            text-align: right;
 
             &__btn {
+                flex: 0 0 auto;
                 position: absolute;
                 right: 0;
-                top: -.2rem;
+                bottom: 0;
                 display: block;
                 text-decoration: none;
-                width: 3rem;
-                height: 3rem;
-                border-radius: .4rem;
+                width: 2.8rem;
+                height: 2.8rem;
                 border: .1rem solid #000;
+                border-radius: .6rem;
 
                 svg {
                     position: absolute;
                     fill: #000;
-                    top: .9rem;
-                    left: .9rem;
-
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 2.6rem;
                 }
             }
         }
 
         &-price {
             position: relative;
-            padding-top: 1.4rem;
-
-            &__sale {
-                position: absolute;
-                right: 0;
-                top: 0;
-                font-size: 1.2rem;
-                text-decoration: line-through;
-            }
-
-            &__num {
-                font-weight: 700;
-                color: #434d54;
-                font-size: 1.5rem;
+            min-height: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__old{
+                font-weight: bold;
+                font-style: normal;
+                color: #404655;
+                font-size: 1.3rem;
                 line-height: 1.5rem;
                 white-space: nowrap;
+                margin-bottom: 1.3rem;
+                .mod-unit{
+                    font-weight: 300;
+                    font-size: 1.1rem;
+                    line-height: 1.3rem;
+                }
 
+            }
+            &__sale {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                letter-spacing: 0.05em;
+                color: #97A0A4;
+                text-decoration: line-through;
+                margin-bottom: .2rem;
+            }
+
+            &__text{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                letter-spacing: 0.05em;
+                color: #404655;
+                margin-bottom: .2rem;
+            }
+            &__num {
+                font-weight: bold;
+                font-style: normal;
+                color: #404655;
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                white-space: nowrap;
+                .mod-unit{
+                    font-weight: 300;
+                    font-size: 1.1rem;
+                    line-height: 1.3rem;
+                }
             }
         }
 
         &-choice {
             display: none;
             text-align: center;
+            &-price-wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 3rem;
+            }
             &__price {
-                color: #5ab55e;
-                font-size: 2.4rem;
-                font-weight: 700;
-                margin-bottom: .6rem;
-                line-height: 2.4rem;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                text-align: center;
+                color: #DE2D42;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin-bottom: .8rem;
             }
 
             &__sale {
-                font-size: 1.3rem;
-                color: #000000;
-                margin-bottom: .6rem;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                letter-spacing: 0.05em;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                color: #97A0A4;
+                margin-bottom: .2rem;
+            }
+            &__num {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                letter-spacing: 0.05em;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                color: #404655;
             }
         }
 
         &-count {
+            margin-top: 1rem;
+            .c-counter__field{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+                color: #DE2D42;
+            }
+            .c-counter__btn{
+                flex: 0 0 auto;
+                width: 2.8rem;
+                height: 2.8rem;
+                border-radius: .6rem;
+                background: #DE2D42;
+                border-color: #DE2D42;
+                .icon-minus{
+                    font-size: 1.4rem;
+                }
+                .icon-plus{
+                    font-size: 2.6rem;
 
+                }
+            }
         }
 
 
@@ -629,23 +735,29 @@
             overflow: hidden;
             background: #FEDE39;
             margin-bottom: .9rem;
+            margin-left:-.6rem;
+            margin-right:-.6rem;
 
 
             &__text {
                 color: #DE2D42;
                 padding: .4rem .6rem;
-                line-height: 1rem;
-                font-size: .9rem;
-                font-weight: 400;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: 1.2rem;
                 text-transform: uppercase;
             }
 
             &__num {
                 background: #DE2D42;
                 font-size: 1.1rem;
-                color: #ffffff;
-                padding: .4rem 1.3rem;
-                line-height: 1.1rem;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 1.2rem;
+                letter-spacing: 0.05em;
+                padding: .4rem .8rem;
+                color: #fff;
             }
         }
     }
