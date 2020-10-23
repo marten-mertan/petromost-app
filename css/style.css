@@ -1459,13 +1459,13 @@ a {
       bottom: 0;
       display: block;
       text-decoration: none;
-      width: 2.8rem;
-      height: 2.8rem;
-      border: .1rem solid #000;
+      width: 2.6rem;
+      height: 2.6rem;
+      border: .1rem solid #444;
       border-radius: .6rem; }
       .catalog-card-add__btn svg {
         position: absolute;
-        fill: #000;
+        fill: #444;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -1575,6 +1575,74 @@ a {
          text-overflow: ellipsis;
       overflow: hidden;
       color: #404655; }
+  .catalog-card-inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .catalog-card-inform__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      letter-spacing: 0.05em;
+      color: #97A0A4;
+      margin-bottom: 1.5rem;
+      width: 100%; }
+  .catalog-card__checkbox {
+    display: block;
+    max-width: 12rem;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.05em;
+    color: #404655;
+    padding: 0 0 0 3.5rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .catalog-card__checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+      .catalog-card__checkbox input:checked ~ .catalog-card__checkmark {
+        border: .1rem solid #5ab55e;
+        background: #5ab55e; }
+        .catalog-card__checkbox input:checked ~ .catalog-card__checkmark:after {
+          display: block; }
+  .catalog-card__checkmark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2.6rem;
+    height: 2.6rem;
+    border: .1rem solid #444;
+    border-radius: 0.6rem; }
+    .catalog-card__checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: .8rem;
+      top: .3rem;
+      width: .8rem;
+      height: 1.2rem;
+      border: solid #fff;
+      border-width: 0 .2rem .2rem 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
   .catalog-card-count {
     margin-top: 1rem; }
     .catalog-card-count .c-counter__field {
@@ -1587,8 +1655,8 @@ a {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
-      width: 2.8rem;
-      height: 2.8rem;
+      width: 2.6rem;
+      height: 2.6rem;
       border-radius: .6rem;
       background: #DE2D42;
       border-color: #DE2D42; }
