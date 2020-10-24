@@ -226,7 +226,7 @@ div {
   display: inline-block;
   fill: none;
   stroke: #434D54;
-  stroke-width: .2rem;
+  stroke-width: .1rem;
   font-size: 2.2rem;
   width: 1em;
   height: .8em; }
@@ -255,7 +255,21 @@ div {
 .icon-minus {
   display: inline-block;
   fill: #434D54;
-  font-size: .7rem;
+  font-size: 1rem;
+  width: 1.4em;
+  height: .2em; }
+
+.icon-plus-catalog {
+  display: inline-block;
+  fill: #434D54;
+  font-size: 1rem;
+  width: 1.4em;
+  height: 1.4em; }
+
+.icon-minus-catalog {
+  display: inline-block;
+  fill: #434D54;
+  font-size: 1rem;
   width: 1em;
   height: .3em; }
 
@@ -1324,7 +1338,10 @@ a {
           justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-          align-items: stretch; }
+          align-items: stretch;
+  padding-top: .1rem;
+  width: 100%;
+  overflow: hidden; }
   .catalog-list__item {
     width: 50%; }
     .catalog-list__item:nth-child(2n) .catalog-card {
@@ -1349,23 +1366,49 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #E4ECF2;
+  border-bottom: 1px solid #E4ECF2;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 1; }
   .catalog-card.active {
-    border-color: #5AB55E;
+    border-color: #DE2D42;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
+    transition: all .2s ease-in-out;
+    z-index: 2; }
     .catalog-card.active .catalog-card__img {
       height: 8rem; }
     .catalog-card.active .catalog-card-add {
       display: none; }
     .catalog-card.active .catalog-card-choice {
       display: block; }
+    .catalog-card.active:before {
+      background-color: #DE2D42; }
+    .catalog-card.active:after {
+      background-color: #DE2D42; }
+  .catalog-card:before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -1px;
+    height: 1px;
+    left: -1px;
+    right: -1px;
+    background-color: #E4ECF2;
+    z-index: 1; }
+  .catalog-card:after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: -1px;
+    width: 1px;
+    left: -1px;
+    background-color: #E4ECF2;
+    z-index: 1; }
   .catalog-card__label {
     position: absolute;
     top: 0;
@@ -1456,11 +1499,11 @@ a {
               flex: 0 0 auto;
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: .1rem;
       display: block;
       text-decoration: none;
-      width: 2.6rem;
-      height: 2.6rem;
+      width: 2.5rem;
+      height: 2.5rem;
       border: .1rem solid #444;
       border-radius: .6rem; }
       .catalog-card-add__btn svg {
@@ -1470,8 +1513,7 @@ a {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-        font-size: 2.6rem; }
+                transform: translate(-50%, -50%); }
   .catalog-card-price {
     position: relative;
     min-height: 3rem;
@@ -1582,10 +1624,7 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+            flex-direction: column; }
     .catalog-card-inform__text {
       font-style: normal;
       font-weight: normal;
@@ -1624,10 +1663,10 @@ a {
           display: block; }
   .catalog-card__checkmark {
     position: absolute;
-    bottom: 0;
+    bottom: .1rem;
     left: 0;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: .1rem solid #444;
     border-radius: 0.6rem; }
     .catalog-card__checkmark:after {
@@ -1655,15 +1694,12 @@ a {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
-      width: 2.6rem;
-      height: 2.6rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      bottom: .1rem;
       border-radius: .6rem;
       background: #DE2D42;
       border-color: #DE2D42; }
-      .catalog-card-count .c-counter__btn .icon-minus {
-        font-size: 1.4rem; }
-      .catalog-card-count .c-counter__btn .icon-plus {
-        font-size: 2.6rem; }
   .catalog-card-sale {
     display: -webkit-box;
     display: -ms-flexbox;
