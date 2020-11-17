@@ -51,7 +51,7 @@ $(document).ready(function () {
     console.log('posHead: ' + posHead);
     console.log(pos);
     var catalogBasket = $('.catalog-basket');
-    var heightBasketBtnSmall = 45;
+    var heightBasketBtnSmall = catalogBasketHeadHeight;
 
     // добавляет/удаляет отступ для всплывающей корзины
     var bottomPaddingBlock = {
