@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>petromost-app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link href="js/scrollbar/jquery.mCustomScrollbar.css" type="text/css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="js/sumoselect/sumoselect.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header-layout">
+        <div class="header">
+            <div class="header-col">
+                <a href="#" class="header-menu">
+                    <svg class="icon-hamburger">
+                        <use xlink:href="./img/icons/main.svg#icon-hamburger"></use>
+                    </svg>
+                </a>
+                <a href="home.html" class="header-logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-col">
+                <a href="#" class="header-phone">
+                    <svg class="icon-phone">
+                        <use xlink:href="./img/icons/main.svg#icon-phone"></use>
+                    </svg>
+                </a>
+                <a href="profile.html" class="header-profile">
+                    <svg class="icon-user">
+                        <use xlink:href="./img/icons/main.svg#icon-user"></use>
+                    </svg>
+                </a>
+                <a href="https://abestuzhev.github.io/petromost-app/basket.html" class="header-basket">
+                    <svg class="icon-basket">
+                        <use xlink:href="./img/icons/main.svg#icon-basket"></use>
+                    </svg>
+                    <div class="header-basket-count"><span>1</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="wrapper mod-flex has-header">
+    <div class="category-new-head-pies js-category-dropdown">
+        <div class="category-new-head-row mod-cart-pie">
+            <a href="/" class="category-new-head__back">
+                <svg class="icon-undo">
+                    <use xlink:href="./img/icons/main.svg#icon-undo"></use>
+                </svg>
+            </a>
+            <div class="category-new-head__drop">
+                <span class="category-new-head__title">ОБРАТНАЯ СВЯЗЬ</span>
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="feedback-content">
+            <p class="feedback__text mod-bold">Вы недавно делали заказ в интернет гипермаркете Петромост.</p>
+            <p class="feedback__text">Надеемся, что вам понравился наш сервис - мы будем рады  видеть
+            вас среди наших любимых постоянных покупателей.</p>
+            <p class="feedback__text mod-bold">Помогите нам стать лучше для Вас - <span class="mod-attention">оцените нашу работу.</span></p>
+            <p class="feedback__text mod-bold">Спасибо!</p>
+            <form action="" class="feedback-form">
+                <div class="feedback-form-top">
+                    <div class="feedback-form-top__text">Все понравилось</div>
+                    <div class="feedback-form-top__text">Нам нужно обратить внимание на:</div>
+                </div>
+                <div class="feedback-form-body">
+                    <label class="feedback-form-checkbox">
+                        <input class="js-feedback-check good-feedback" type="checkbox">
+                        <svg class="feedback-form-checkbox__icon icon-happy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <path class="a" d="M50,0a50,50,0,1,0,50,50A50,50,0,0,0,50,0ZM35.28,33.16a6.14,6.14,0,1,1-6.15,6.14A6.14,6.14,0,0,1,35.28,33.16Zm33.08,29c-6.21,6.21-12.7,9.35-19.3,9.35l-1.05,0c-10.68-.54-17.7-9-18-9.37a.49.49,0,0,1,.07-.7.5.5,0,0,1,.7.07c.07.09,7.05,8.49,17.28,9,6.66.34,13.26-2.71,19.58-9a.51.51,0,0,1,.71,0A.5.5,0,0,1,68.36,62.11ZM62.5,45.44a6.14,6.14,0,1,1,6.14-6.14A6.14,6.14,0,0,1,62.5,45.44Z"/>
+                        </svg>
+                    </label>
+                    <label class="feedback-form-checkbox">
+                        <input class="js-feedback-check bad-feedback" type="checkbox">
+                        <svg class="feedback-form-checkbox__icon icon-sad" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <path class="a" d="M50,0a50,50,0,1,0,50,50A50,50,0,0,0,50,0ZM35.28,33.16a6.14,6.14,0,1,1-6.15,6.14A6.14,6.14,0,0,1,35.28,33.16Zm33,38.19a.5.5,0,0,1-.7-.07c-.07-.09-7.05-8.48-17.27-9-6.67-.33-13.27,2.71-19.59,9a.54.54,0,0,1-.36.14.52.52,0,0,1-.35-.14.5.5,0,0,1,0-.71c6.54-6.54,13.4-9.68,20.36-9.33,10.67.54,17.69,9,18,9.37A.5.5,0,0,1,68.32,71.35ZM62.5,45.44a6.14,6.14,0,1,1,6.14-6.14A6.14,6.14,0,0,1,62.5,45.44Z"/>
+                        </svg>
+                        <div class="feedback-form-checkbox__text">Сервис доставки, работа курьера</div>
+                    </label>
+                    <label class="feedback-form-checkbox">
+                        <input class="js-feedback-check bad-feedback" type="checkbox">
+                        <svg class="feedback-form-checkbox__icon icon-sad" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <path class="a" d="M50,0a50,50,0,1,0,50,50A50,50,0,0,0,50,0ZM35.28,33.16a6.14,6.14,0,1,1-6.15,6.14A6.14,6.14,0,0,1,35.28,33.16Zm33,38.19a.5.5,0,0,1-.7-.07c-.07-.09-7.05-8.48-17.27-9-6.67-.33-13.27,2.71-19.59,9a.54.54,0,0,1-.36.14.52.52,0,0,1-.35-.14.5.5,0,0,1,0-.71c6.54-6.54,13.4-9.68,20.36-9.33,10.67.54,17.69,9,18,9.37A.5.5,0,0,1,68.32,71.35ZM62.5,45.44a6.14,6.14,0,1,1,6.14-6.14A6.14,6.14,0,0,1,62.5,45.44Z"/>
+                        </svg>
+                        <div class="feedback-form-checkbox__text">Качество продуктов</div>
+                    </label>
+                    <label class="feedback-form-checkbox">
+                        <input class="js-feedback-check bad-feedback" type="checkbox">
+                        <svg class="feedback-form-checkbox__icon icon-sad" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <path class="a" d="M50,0a50,50,0,1,0,50,50A50,50,0,0,0,50,0ZM35.28,33.16a6.14,6.14,0,1,1-6.15,6.14A6.14,6.14,0,0,1,35.28,33.16Zm33,38.19a.5.5,0,0,1-.7-.07c-.07-.09-7.05-8.48-17.27-9-6.67-.33-13.27,2.71-19.59,9a.54.54,0,0,1-.36.14.52.52,0,0,1-.35-.14.5.5,0,0,1,0-.71c6.54-6.54,13.4-9.68,20.36-9.33,10.67.54,17.69,9,18,9.37A.5.5,0,0,1,68.32,71.35ZM62.5,45.44a6.14,6.14,0,1,1,6.14-6.14A6.14,6.14,0,0,1,62.5,45.44Z"/>
+                        </svg>
+                        <div class="feedback-form-checkbox__text">Некорректная работа сайта ИМ</div>
+                    </label>
+                </div>
+                <button class="feedback-form-button" type="submit" value="Submit">Отправить</button>
+            </form>
+        </div>
+        <div class="feedback-decor">
+            <div class="feedback-decor-picture">
+                
+            </div>
+            <div class="feedback-decor-baloon-yellow">
+                
+            </div>
+            <div class="feedback-decor-baloon-green">
+                
+            </div>
+            <div class="feedback-decor-baloon-red">
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="mfp-wrap popup-address">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="delivery">
+                            <form action="" method="POST">
+                                <div class="delivery-list">
+                                    <!--START delivery-list__item-->
+                                    <div class="delivery-list__item">
+                                        <div class="delivery-card">
+                                            <input type="radio" name="delivery-address" id="delivery-address-1" class="c-radio-input" checked="">
+                                            <label for="delivery-address-1" class="c-radio-label">
+                                                <span class="delivery-card-text">адрес выбран как основной</span>
+                                                <span>г.Архангельсу, ул.Лихтенштейна, д.45, кв.89</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--END delivery-list__item-->
+                                    <!--START delivery-list__item-->
+                                    <div class="delivery-list__item">
+                                        <div class="delivery-card">
+                                            <input type="radio" name="delivery-address" id="delivery-address-2" class="c-radio-input">
+                                            <label for="delivery-address-2" class="c-radio-label"><span>г.Архангельсу, ул.Лихтенштейна, д.45, кв.89</span></label>
+                                        </div>
+                                    </div>
+                                    <!--END delivery-list__item-->
+                                    <!--START delivery-list__item-->
+                                    <div class="delivery-list__item">
+                                        <div class="delivery-card">
+                                            <a href="https://abestuzhev.github.io/petromost-app/delivery-address-add.html" class="delivery-card-add">
+                                                <svg class="icon-plus">
+                                                    <use xlink:href="./img/icons/main.svg#icon-plus"></use>
+                                                </svg>
+                                                <span>Новый адрес</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--END delivery-list__item-->
+                                </div>
+                            </form>
+
+
+
+                            <div class="c-btn-layout c-btn-layout--center">
+                                <a href="#" class="c-btn">сохранить изменения</a>
+                            </div>
+                        </div>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-wrap popup-address-new">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="delivery-add">
+                            <form action="" method="POST" class="c-form delivery-add-form">
+                                <div class="c-form-line">
+                                    <label class="c-form-label">Город</label>
+                                    <select class="c-form-select" name="delivery-add-city" id="">
+                                        <option value="">Архангельск</option>
+                                        <option value="">Москва</option>
+                                        <option value="">Санкт-Петербург</option>
+                                    </select>
+                                </div>
+                                <div class="c-form-line">
+                                    <label class="c-form-label">Улица</label>
+                                    <input type="text" class="c-form-input" name="delivery-add-street">
+                                </div>
+                                <div class="c-form-grid">
+                                    <div class="c-form-col c-form-col--6">
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Дом</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-house">
+                                        </div>
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Этаж</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-floor">
+                                        </div>
+                                    </div>
+                                    <div class="c-form-col c-form-col--6">
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Подъезд</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-porch">
+                                        </div>
+                                        <div class="c-form-line">
+                                            <label class="c-form-label">Кв./Офис</label>
+                                            <input type="text" class="c-form-input" name="delivery-add-flat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="c-btn-layout c-btn-layout--center">
+                                <a href="https://abestuzhev.github.io/petromost-app/delivery-address.html" class="c-btn">сохранить изменения</a>
+                            </div>
+                        </div>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mfp-wrap popup-card">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="popup-icon">
+                            <svg class="icon-card">
+                                <use xlink:href="./img/icons/main.svg#icon-card"></use>
+                            </svg>
+                        </div>
+
+                        <form action="" method="POST" class="popup-form">
+                            <div class="popup-line">
+                                <input type="text" class="popup-input" value="123415643135132132">
+                            </div>
+                            <div class="c-btn-layout">
+                                <button class="c-btn">изменить карту</button>
+                            </div>
+                        </form>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mfp-wrap popup-user">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <a href="#" class="popup-close js-popup-close">
+                    <svg class="icon-close"><use xlink:href="./img/icons/main.svg#icon-close"/></svg>
+                </a>
+                <div class="popup-box">
+                    <div class="popup-body">
+                        <div class="popup-icon">
+                            <svg class="icon-user-outline">
+                                <use xlink:href="./img/icons/main.svg#icon-user-outline"></use>
+                            </svg>
+                        </div>
+
+                        <form action="" method="POST" class="popup-form">
+                            <div class="popup-line">
+                                <input type="text" class="popup-input" value="Морозов Эдуард">
+                            </div>
+                            <div class="popup-line">
+                                <input type="text" class="popup-input" value="+7 952 456-12-23">
+                            </div>
+                            <div class="c-btn-layout">
+                                <button class="c-btn">сохранить изменения</button>
+                            </div>
+                        </form>
+
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--popup-->
+<div class="mfp-wrap popup-menu">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+
+                <div class="popup-box">
+                    <div class="popup-menu-head">
+                        <div class="header-logo">
+                            <a href="https://abestuzhev.github.io/petromost-app/home.html">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <a href="#" class="popup-close">
+                            <svg class="icon-close">
+                                <use xlink:href="./img/icons/main.svg#icon-close"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popup-menu-body">
+                        <div class="popup-menu-address">
+                            <svg class="icon-point">
+                                <use xlink:href="./img/icons/main.svg#icon-point"/>
+                            </svg>
+                            <span>Адрес доставки: Введите адрес</span>
+                        </div>
+                        <div class="popup-menu-time">
+                            <div class="c-tabs">
+                                <ul class="c-tabs-menu">
+                                    <li class="c-tabs-menu__item current"><a href="#menu-time-1">Сегодня</a></li>
+                                    <li class="c-tabs-menu__item"><a href="#menu-time-2">Завтра</a></li>
+                                </ul>
+                                <div class="c-tabs-body">
+                                    <div id="menu-time-1" class="tab-content">
+                                        <div class="popup-menu-time__grid">
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text through"><a href="#">09:30 - 12:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text through"><a href="#">12:30 - 15:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="menu-time-2" class="tab-content">
+                                        <div class="popup-menu-time__grid">
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">09:30 - 12:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">12:30 - 15:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">15:30 - 18:30</a></div>
+                                            </div>
+                                            <div class="popup-menu-time__col">
+                                                <div class="popup-menu-time__text"><a href="#">18:30 - 21:00</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popup-menu-list">
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Доставка и оплата</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">idUser#456879</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                            <!--START popup-menu-list__item-->
+                            <div class="popup-menu-list__item">
+                                <a href="#" class="popup-menu-link">Каталог товаров</a>
+                            </div>
+                            <!--END popup-menu-list__item-->
+                        </div>
+                        <div class="popup-menu-footer">
+                            <a href="tel:+7(8182)44-44-44" class="popup-menu-phone">т. 44-44-44</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>svg4everybody(); // run it now or whenever you are ready</script>
+<!--<script src="js/sumoselect/jquery.sumoselect.min.js"></script>-->
+<script src="js/jquery.mask.min.js"></script>
+<!--<script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>
