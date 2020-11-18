@@ -4938,7 +4938,7 @@ a {
         opacity: 0;
         visibility: hidden; }
         .feedback-form-checkbox input:checked ~ .feedback-form-checkbox__icon.icon-happy {
-          fill: #33b59c; }
+          fill: #5ab55e; }
         .feedback-form-checkbox input:checked ~ .feedback-form-checkbox__icon.icon-sad {
           fill: #d80001; }
       .feedback-form-checkbox__icon {
