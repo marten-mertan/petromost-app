@@ -1570,7 +1570,7 @@
 }
 
 .product {
-    margin-top: -4.8rem;
+    //margin-top: -4.8rem;
 
     &-body {
         padding: 0 1rem;
@@ -1591,6 +1591,8 @@
     .slider-item {
         margin: 0;
         height: 32rem;
+        background: none 50% 50% no-repeat;
+        background-size: contain;
     }
 
     &-info {
