@@ -4461,7 +4461,7 @@
         }
     }
 }
-
+// кнопка назад в карточке товара
 a.category-new-head-row{
     text-decoration: none;
 }
@@ -4477,5 +4477,8 @@ a.category-new-head-row{
     & + .search-area{
         margin-bottom: 0;
     }
+}
 
+.search-area:not(:last-child){
+    margin-bottom: 0;
 }

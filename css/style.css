@@ -5042,6 +5042,9 @@ a.category-new-head-row {
   .header-product + .search-area {
     margin-bottom: 0; }
 
+.search-area:not(:last-child) {
+  margin-bottom: 0; }
+
 @media (min-width: 320px) {
   html {
     font-size: 10px; } }
