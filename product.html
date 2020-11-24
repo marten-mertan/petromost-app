@@ -16,7 +16,37 @@
 <body>
 
 <div class="header-layout">
-    <div class="header header-transparent">
+    <div class="header">
+        <div class="header-col">
+            <a href="#" class="header-menu">
+                <svg class="icon-hamburger">
+                    <use xlink:href="./img/icons/main.svg#icon-hamburger"></use>
+                </svg>
+            </a>
+            <a href="home.html" class="header-logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header-col">
+            <a href="#" class="header-phone">
+                <svg class="icon-phone">
+                    <use xlink:href="./img/icons/main.svg#icon-phone"></use>
+                </svg>
+            </a>
+            <a href="profile.html" class="header-profile">
+                <svg class="icon-user">
+                    <use xlink:href="./img/icons/main.svg#icon-user"></use>
+                </svg>
+            </a>
+            <a href="https://abestuzhev.github.io/petromost-app/basket.html" class="header-basket">
+                <svg class="icon-basket">
+                    <use xlink:href="./img/icons/main.svg#icon-basket"></use>
+                </svg>
+                <div class="header-basket-count"><span>1</span></div>
+            </a>
+        </div>
+    </div>
+    <div class="header header-product">
         <!-- <div class="header-col">
             <a href="https://abestuzhev.github.io/petromost-app/catalog.html" class="header-back">
                 <svg class="icon-arrow-left">
@@ -47,6 +77,16 @@
                 <span class="category-new-head__subtitle">Вернуться назад</span>
             </div>
         </a>
+    </div>
+    <div class="search-area">
+        <form action="" method="GET">
+            <input type="text" class="search-area-input" placeholder="Поиск на Петромост">
+            <button class="search-area-btn">
+                <svg class="icon-search">
+                    <use xlink:href="./img/icons/main.svg#icon-search"></use>
+                </svg>
+            </button>
+        </form>
     </div>
 </div>
 

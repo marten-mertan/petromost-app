@@ -4465,3 +4465,17 @@
 a.category-new-head-row{
     text-decoration: none;
 }
+
+.header-product{
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    height: 7.8rem;
+    background: white;
+    width: 100%;
+    z-index: 10;
+    & + .search-area{
+        margin-bottom: 0;
+    }
+
+}
