@@ -5028,6 +5028,9 @@ a {
       top: 2.5%;
       left: 81.42%; }
 
+a.category-new-head-row {
+  text-decoration: none; }
+
 @media (min-width: 320px) {
   html {
     font-size: 10px; } }
