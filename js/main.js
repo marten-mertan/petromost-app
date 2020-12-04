@@ -730,6 +730,11 @@ $(document).ready(function () {
         }
         if (count > 0){
             $input.val(result);
+            var $buffer = $input.next('.js-input-buffer');
+            if ($buffer.length) {
+                $buffer.text($input.val());
+                $input.width($buffer.width());
+            }
         }
     });
 
@@ -753,6 +758,11 @@ $(document).ready(function () {
         if (count < max){
             console.log('1');
             $input.val(result);
+            var $buffer = $input.next('.js-input-buffer');
+            if ($buffer.length) {
+                $buffer.text($input.val());
+                $input.width($buffer.width());
+            }
         }
     });
 
@@ -791,5 +801,12 @@ $(document).ready(function () {
         prevTab.addClass('current');
         $('.js-product-menu-tab').not(tab).css('display', 'none');
         $(tab).fadeIn();
+    });
+
+    //ставим ширину инпутов
+    $('.js-input-adaptive').each( function() {
+        var $buffer = $(this).next('.js-input-buffer');
+        $buffer.text($(this).val());
+        $(this).width($buffer.width());
     });
 });
