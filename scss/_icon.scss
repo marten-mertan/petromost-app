@@ -322,3 +322,29 @@
     width: 1.3em;
     height: 1.1em;
 }
+.icon-star-full{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #ffaf02;
+}
+.icon-star-empty{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #ffaf02;
+}
+.icon-star-half{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #ffaf02;
+}
+.icon-card-item{
+    display: inline-block;
+    position: relative;
+    margin-right: .3rem;
+    width: 1.4rem;
+    height: .9rem;
+    fill: #404655;
+}
