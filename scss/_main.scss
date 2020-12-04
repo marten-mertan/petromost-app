@@ -1698,6 +1698,7 @@
         .product-controls input{
             display: inline-block;
             width: 4rem;
+            min-width: 4rem;
             text-align: right;
         }
         .product-controls-unit{
@@ -1705,12 +1706,14 @@
         }
     }
     &-controls{
+        flex: 0 0 auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-bottom: 2rem;
         input{
+            flex: 0 0 auto;
             display: none;
             font-size: 2.4rem;
             line-height: 2.8rem;
@@ -1721,8 +1724,10 @@
             border: none;
         }
         &-unit{
+            flex: 0 0 auto;
             display: none;
             width: 4rem;
+            min-width: 4rem;
             font-size: 1.2rem;
             padding-top: .8rem;
             color: #000;
