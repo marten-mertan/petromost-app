@@ -1178,7 +1178,7 @@
 
     &-address {
         padding: 0 1rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 0rem;
         font-size: 1.4rem;
         a {
             color: #000000;
@@ -4744,4 +4744,60 @@ a.category-new-head-row{
 
 .search-area:not(:last-child){
     margin-bottom: 0;
+}
+
+
+.popup-menu-delivery{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 1rem 1rem;
+    svg{
+        margin-right: .8rem;
+    }
+    &__text{
+        padding: 1.1rem 0 .7rem;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        .mod-red{
+            color: #de2d42;
+        }
+    }
+    &__line{
+        position: absolute;
+        left: 1rem;
+        bottom: 1.1rem;
+        height: .2rem;
+        width: 90%;
+        max-width: 29rem;
+        background-color: #5f6269;
+        z-index: 1;
+        &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: .2rem;
+            width: 64%;
+            background-color: #de2d42;
+            z-index: 2;
+        }
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            top: -.3rem;
+            right: -.6rem;
+            height: .8rem;
+            width: .8rem;
+            background-color: #5f6269;
+            border-radius: 50%;
+            z-index: 3;
+
+        }
+    }
 }
