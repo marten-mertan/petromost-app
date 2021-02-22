@@ -809,4 +809,8 @@ $(document).ready(function () {
         $buffer.text($(this).val());
         $(this).width($buffer.width());
     });
+
+    //скролл трекера в истории заказов
+    let circlePosition = $('.js-circle-active').position();
+    $('.js-tracker').scrollLeft(circlePosition.left - 146);
 });
