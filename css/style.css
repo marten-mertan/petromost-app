@@ -5214,6 +5214,15 @@ a {
 .order-history-card__time {
   font-size: 1.3rem;
   line-height: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem; }
+
+.order-history-card__payment {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
   margin-bottom: 1rem; }
 
 .order-history-card__address {
