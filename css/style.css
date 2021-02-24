@@ -2335,8 +2335,6 @@ a {
       font-weight: 300; }
   .order-history-tracker {
     padding: 2rem 1rem 1rem; }
-    .order-history-tracker.mod-gray {
-      background: #f6f6f6; }
     .order-history-tracker.mod-canceled .order-history-tracker-list {
       padding-bottom: 4rem; }
     .order-history-tracker-wrap {
