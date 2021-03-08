@@ -16,6 +16,29 @@
         }
     }
 
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f3f3f3;
+        padding: .3rem 1.8rem .3rem 1rem;
+
+        &-logo {
+            margin-right: 1.2rem;
+
+            img {
+                display: block;
+            }
+            &-text {
+                margin-right: 1.2rem;
+
+                img {
+                    display: block;
+                }
+            }
+        }
+    }
+
     &-col:nth-child(1) {
         display: flex;
         flex-flow: row nowrap;
@@ -70,6 +93,13 @@
 
     &-profile {
         padding: 1.2rem .8rem;
+        svg {
+            display: block;
+        }
+    }
+
+    &-status {
+        padding: 1.2rem .9rem;
         svg {
             display: block;
         }

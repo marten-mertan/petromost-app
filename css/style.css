@@ -486,6 +486,13 @@ div {
   height: 1.2rem;
   fill: #fff; }
 
+.icon-header-clock {
+  display: inline-block;
+  fill: #434D54;
+  font-size: 1.6rem;
+  width: 1em;
+  height: 1em; }
+
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -1042,6 +1049,26 @@ a {
     background-color: transparent; }
     .header-transparent .header-back {
       position: relative; }
+  .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f3f3f3;
+    padding: .3rem 1.8rem .3rem 1rem; }
+    .header-top-logo {
+      margin-right: 1.2rem; }
+      .header-top-logo img {
+        display: block; }
+      .header-top-logo-text {
+        margin-right: 1.2rem; }
+        .header-top-logo-text img {
+          display: block; }
   .header-col:nth-child(1) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1099,6 +1126,10 @@ a {
   .header-profile {
     padding: 1.2rem .8rem; }
     .header-profile svg {
+      display: block; }
+  .header-status {
+    padding: 1.2rem .9rem; }
+    .header-status svg {
       display: block; }
   .header-basket {
     position: relative;
