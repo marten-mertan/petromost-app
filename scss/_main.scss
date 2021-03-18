@@ -81,6 +81,8 @@
         margin: 0;
         svg {
             display: block;
+            margin: 0;
+            padding: 0;
         }
     }
 
@@ -249,6 +251,7 @@
         font-size: 1.2rem;
         line-height: 1.4rem;
         position: relative;
+        margin: 0;
     }
 
     &-btn {

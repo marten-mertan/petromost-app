@@ -1136,7 +1136,9 @@ a {
     padding: 1rem .5rem 1rem 1rem;
     margin: 0; }
     .header-menu svg {
-      display: block; }
+      display: block;
+      margin: 0;
+      padding: 0; }
   .header-logo {
     cursor: pointer; }
     .header-logo a {
@@ -1270,7 +1272,8 @@ a {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.4rem;
-    position: relative; }
+    position: relative;
+    margin: 0; }
   .search-area-btn {
     position: absolute;
     top: .9rem;
