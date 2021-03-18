@@ -493,6 +493,12 @@ div {
   width: 1em;
   height: 1em; }
 
+.icon-header-exit {
+  display: inline-block;
+  fill: #434D54;
+  width: 1.5rem;
+  height: 1.5rem; }
+
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -1043,7 +1049,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  background-color: #f3f3f3;
+  margin-bottom: .5rem; }
   .header-transparent {
     padding: 1rem;
     background-color: transparent; }
@@ -1062,7 +1070,7 @@ a {
     background-color: #f3f3f3;
     padding: .3rem 1.8rem .3rem 1rem; }
     .header-top-logo {
-      margin-right: 1.2rem; }
+      margin: 0 .5rem 0 1rem; }
       .header-top-logo img {
         display: block; }
       .header-top-logo-text {
@@ -1107,8 +1115,18 @@ a {
     right: 0;
     z-index: 10;
     background-color: #fff; }
+  .header-burger {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #eff6fb;
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem; }
   .header-menu {
-    padding: 1rem; }
+    padding: 1rem .5rem 1rem 1rem; }
     .header-menu svg {
       display: block; }
   .header-logo {
@@ -1124,8 +1142,12 @@ a {
     .header-phone svg {
       display: block; }
   .header-profile {
-    padding: 1.2rem .8rem; }
+    padding: 1.2rem .7rem; }
     .header-profile svg {
+      display: block; }
+  .header-exit {
+    padding: 1.2rem .7rem; }
+    .header-exit svg {
       display: block; }
   .header-status {
     padding: 1.2rem .9rem; }
@@ -1213,19 +1235,27 @@ a {
     top: 1rem; }
 
 .search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 1rem;
   width: 100%;
-  margin-bottom: 1.6rem;
+  margin-bottom: .5rem;
   position: relative; }
   .search-area form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 100%;
     position: relative; }
   .search-area-input {
     width: 100%;
     border: none;
     outline: none;
     background-color: #EFF6FB;
-    border-radius: .6rem;
-    padding: 1.1rem 3.4rem 1.1rem 1.1rem;
+    border-top-right-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+    padding: 1.1rem 3.4rem 1.1rem .6rem;
     font-weight: 300;
     font-size: 1.2rem;
     position: relative; }
