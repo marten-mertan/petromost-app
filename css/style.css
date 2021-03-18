@@ -1238,6 +1238,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding: 0 1rem;
   width: 100%;
   margin-bottom: .5rem;
@@ -1258,6 +1261,7 @@ a {
     padding: 1.1rem 3.4rem 1.1rem .6rem;
     font-weight: 300;
     font-size: 1.2rem;
+    line-height: 1.4rem;
     position: relative; }
   .search-area-btn {
     position: absolute;
