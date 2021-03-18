@@ -499,6 +499,12 @@ div {
   width: 1.5rem;
   height: 1.5rem; }
 
+.icon-header-burger {
+  display: inline-block;
+  fill: #434D54;
+  width: 2rem;
+  height: 1.5rem; }
+
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -1126,7 +1132,9 @@ a {
     border-top-left-radius: .6rem;
     border-bottom-left-radius: .6rem; }
   .header-menu {
-    padding: 1rem .5rem 1rem 1rem; }
+    display: block;
+    padding: 1rem .5rem 1rem 1rem;
+    margin: 0; }
     .header-menu svg {
       display: block; }
   .header-logo {
