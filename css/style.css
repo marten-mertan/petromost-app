@@ -505,6 +505,12 @@ div {
   width: 2rem;
   height: 1.5rem; }
 
+.icon-available-check {
+  display: inline-block;
+  fill: #5ab55e;
+  width: 1.3rem;
+  height: 1.3rem; }
+
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -1565,6 +1571,7 @@ a {
     z-index: 2; }
     .catalog-card-favorite svg {
       display: block;
+      fill: #fff;
       -webkit-transition: all .2s ease-in-out;
       -o-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
@@ -5668,6 +5675,26 @@ a.category-new-head-row {
       background-color: #5f6269;
       border-radius: 50%;
       z-index: 3; }
+
+.catalog-card-available {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: .9rem; }
+  .catalog-card-available svg {
+    position: relative;
+    margin-right: .6rem;
+    top: -.1rem; }
+  .catalog-card-available__text {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    color: #404655; }
 
 @media (min-width: 320px) {
   html {

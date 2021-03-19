@@ -595,6 +595,7 @@
 
             svg {
                 display: block;
+                fill: #fff;
                 transition: all .2s ease-in-out;
             }
 
@@ -4993,5 +4994,22 @@ a.category-new-head-row{
             z-index: 3;
 
         }
+    }
+}
+
+.catalog-card-available {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .9rem;
+    svg {
+        position: relative;
+        margin-right: .6rem;
+        top: -.1rem;
+    }
+    &__text {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        color: #404655;
     }
 }
