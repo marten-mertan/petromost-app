@@ -17,12 +17,34 @@
 
 <div class="header-layout">
     <div class="header">
-        <a href="https://abestuzhev.github.io/petromost-app/profile.html" class="header-back">
-            <svg class="icon-arrow-left">
-                <use xlink:href="./img/icons/main.svg#icon-arrow-left"/>
-            </svg>
-        </a>
-        <div class="header-title">Заказ оформлен</div>
+        <div class="header-col">
+            <a href="#" class="header-menu">
+                <svg class="icon-hamburger">
+                    <use xlink:href="./img/icons/main.svg#icon-hamburger"></use>
+                </svg>
+            </a>
+            <a href="home.html" class="header-logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header-col">
+            <a href="#" class="header-phone">
+                <svg class="icon-phone">
+                    <use xlink:href="./img/icons/main.svg#icon-phone"></use>
+                </svg>
+            </a>
+            <a href="profile.html" class="header-profile">
+                <svg class="icon-user">
+                    <use xlink:href="./img/icons/main.svg#icon-user"></use>
+                </svg>
+            </a>
+            <a href="https://abestuzhev.github.io/petromost-app/basket.html" class="header-basket">
+                <svg class="icon-basket">
+                    <use xlink:href="./img/icons/main.svg#icon-basket"></use>
+                </svg>
+                <div class="header-basket-count"><span>1</span></div>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -30,31 +52,69 @@
 
 
 <div class="wrapper mod-flex">
-    <div class="order-after">
-        <div class="order-after-complete">
-            <div class="order-after-complete__icon">
-                <svg class="icon-check">
-                    <use xlink:href="./img/icons/main.svg#icon-check"/>
+    <div class="category-new-head-pies js-category-dropdown">
+        <div class="category-new-head-row mod-cart-pie">
+            <a href="catalog-category-new.html" class="category-new-head__back">
+                <svg class="icon-undo">
+                    <use xlink:href="./img/icons/main.svg#icon-undo"></use>
                 </svg>
+            </a>
+            <div class="category-new-head__drop">
+                <span class="category-new-head__title">ОПЛАТА ЗАКАЗА</span>
             </div>
-            <div class="order-after-complete-right">
-                <p class="order-after-complete__title">
-                    Ваш заказ №7846574
-                </p>
-                <p class="order-after-complete__text">
-                    Успешно оплачен, передан на  комплектацию и доставку курьером.
-                </p>
+            <svg class="icon-trash-bin">
+                <use xlink:href="./img/icons/main.svg#icon-trash-bin"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="order-after">
+        <div class="order-after-content">
+            <div class="order-after-complete">
+                <div class="order-after-complete__icon">
+                    <svg class="icon-check">
+                        <use xlink:href="./img/icons/main.svg#icon-check"/>
+                    </svg>
+                </div>
+                <div class="order-after-complete-right">
+                    <p class="order-after-complete__title">
+                        Ваш заказ №7846574
+                    </p>
+                    <p class="order-after-complete__text">
+                        Успешно оплачен, передан на  комплектацию и доставку курьером.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="order-after-text-below">
-            <p>Вы можете следить  за выполнением своего заказа в</p>
-            <a href="order-history.html">Персональном разделе сайта</a>
-        </div>
-        <p class="order-after-text">Если у вас остались вопросы:</p>
-        <p class="order-after-text"><a href="mailto:petromost-im@mail.ru">petromost-im@mail.ru</a></p>
-        <p class="order-after-text"><a href="tel:79009134558">+7 (900) 913-45-58 </a></p>
-        <div class="order-after-image">
-            <img src="img/order-after.png" alt="Спасибо за заказ">
+            <div class="order-after-text">
+                <p>Вы можете следить  за выполнением своего заказа в <a class="order-after__link" href="order-history.html">Персональном разделе сайта</a></p>
+                <p>Обратите внимание, что для входа в этот раздел вам необходимо будет ввести <br> логин и пароль пользователя сайта.</p>
+            </div>
+            <div class="order-after-logos">
+                <div class="order-after-logos-item">
+                    <img src="img/google-pay.png" alt="Гугл плэй">
+                </div>
+                <div class="order-after-logos-item">
+                    <img src="img/visa.png" alt="Виза">
+                </div>
+                <div class="order-after-logos-item">
+                    <img src="img/mastercard.png" alt="Мастер кард">
+                </div>
+                <div class="order-after-logos-item">
+                    <img src="img/maestro.png" alt="Маестро">
+                </div>
+                <div class="order-after-logos-item">
+                    <img src="img/mir.png" alt="Мир">
+                </div>
+            </div>
+            <div class="order-after-button">
+                <a href="/" class="order-after__btn">Оплатить</a>
+            </div>
+            <div class="order-after-text mod-center">
+                <p>Платежный сервис <a href="/">CloudPayment</a></p>
+                <p>Условия онлайн оплаты на  <a href="/">Петромост.рф</a></p>
+            </div>
+            <div class="order-after-image">
+                <img src="img/order-after.png" alt="Спасибо за заказ">
+            </div>
         </div>
     </div>
 </div>
