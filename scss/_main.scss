@@ -4394,6 +4394,9 @@
             font-weight: 300;
         }
     }
+    &-content {
+        overflow: hidden;
+    }
     &-text {
         p{
             font-size: 1.4rem;
